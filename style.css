@@ -1,0 +1,24 @@
+.top-nav {
+	
+}
+
+.top-nav a:hover {
+	
+}
+
+.nameplate {
+	text-align: center;
+	background-color: #e8e8e8;
+	padding: 40px;
+	font-family: 'Cinzel', Handwriting;
+}
+
+.footer-item {
+	display: inline-block;
+	border-color: #ffffff;
+	border-width: 2px;
+	border-style: solid;
+	color: #ffffff;
+	padding: 10px;
+	margin: 20px;
+}
