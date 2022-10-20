@@ -8,9 +8,44 @@
 
 .nameplate {
 	text-align: center;
-	background-color: #e8e8e8;
+	background-color: #4a4a4a;
 	padding: 40px;
 	font-family: 'Cinzel', Handwriting;
+}
+
+/*Same green as comments*/
+.comment-green-text {
+	color: #0f8022;
+}
+
+/*Same green as classes*/
+.green-text {
+	color: #48c27b;
+}
+
+/*Same purple as if, for, etc.*/
+.purple-text {
+	color: #a674cc;
+}
+
+/*Same blue as variable names*/
+.name-blue-text {
+	color: #85daff;
+}
+
+/*Same blue as data types*/
+.type-blue-text {
+	color: #1885c4;
+}
+
+.footer-carousel {
+	align: center;
+	text-align: center;
+}
+
+.footer-title {
+	text-align: center;
+	color: #ffffff;
 }
 
 .footer-item {
