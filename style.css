@@ -1,18 +1,6 @@
-.top-nav {
-	
-}
-
-.top-nav a:hover {
-	
-}
-
-.nameplate {
-	text-align: center;
-	align: center;
-	background-color: #1e1e1e;
-	padding: 40px;
-	font-family: 'Cinzel', Handwriting;
-}
+/*//////////////////////////
+COLORS
+//////////////////////////*/
 
 /*Same green as comments*/
 .comment-green-text {
@@ -42,6 +30,36 @@
 /*Same yellow as functions*/
 .function-yellow-text {
 	color: #d5dcaa;
+}
+
+
+
+/*//////////////////////////
+ELEMENTS
+//////////////////////////*/
+
+.top-nav {
+	
+}
+
+.top-nav a:hover {
+	
+}
+
+.nameplate {
+	text-align: center;
+	align: center;
+	background-color: #1e1e1e;
+	padding: 40px;
+	font-family: 'Cinzel', Handwriting;
+}
+
+.profile-pic {
+
+}
+
+.about-me {
+	
 }
 
 .footer-carousel {
