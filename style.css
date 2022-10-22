@@ -54,8 +54,12 @@ ELEMENTS
 	font-family: 'Cinzel', Handwriting;
 }
 
-.profile-pic {
+.about-section {
+	display: flex;
+}
 
+.profile-pic {
+	
 }
 
 .about-me {
