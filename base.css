@@ -2,35 +2,36 @@
 
 head {
 	margin: 0px;
+	background-color: #1e1e1e;
 }
 
 body {
-	background-color: #1e1922;
+	background-color: #2e2e2e;
 }
 
 footer {
 	margin: 0px;
-	background-color: #363636;
+	background-color: #1e1e1e;
 	padding: 20px 0px 20px 0px;
 }
 
 h1 {
 	font-size: 48px;
+	color: #dadada;
 }
 
 h2 {
 	font-size: 36 px;
+	color: #dadada;
 }
 
 h3 {
-	
+	font-size: 24 px;
+	color: #dadada;
 }
 
 p {
-	
-}
-
-a {
-	color: #00aeff;
+	font-size: 12 px;
+	color: #dadada;
 }
 

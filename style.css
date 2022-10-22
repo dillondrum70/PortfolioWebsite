@@ -8,39 +8,40 @@
 
 .nameplate {
 	text-align: center;
-	background-color: #4a4a4a;
+	align: center;
+	background-color: #1e1e1e;
 	padding: 40px;
 	font-family: 'Cinzel', Handwriting;
 }
 
 /*Same green as comments*/
 .comment-green-text {
-	color: #0f8022;
+	color: #4d7427;
 }
 
 /*Same green as classes*/
 .green-text {
-	color: #48c27b;
+	color: #4ec9b0;
 }
 
 /*Same purple as if, for, etc.*/
 .purple-text {
-	color: #a674cc;
+	color: #d8a0df;
 }
 
 /*Same blue as variable names*/
 .name-blue-text {
-	color: #85daff;
+	color: #9cdcfc;
 }
 
 /*Same blue as data types*/
 .type-blue-text {
-	color: #1885c4;
+	color: #539cd6;
 }
 
 /*Same yellow as functions*/
 .function-yellow-text {
-	color: #fffba6;
+	color: #d5dcaa;
 }
 
 .footer-carousel {
