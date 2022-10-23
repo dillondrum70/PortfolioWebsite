@@ -42,6 +42,16 @@ COLORS
 	color: #a9a9ab;
 }
 
+/*Same blue as the border of highlighted elements*/
+.highlight-border-blue-text {
+	color: #3e648e;
+}
+
+/*Same blue as highlighted elements*/
+.highlight-blue-text {
+	color: #113d6f;
+}
+
 
 /*//////////////////////////
 ELEMENTS
@@ -64,24 +74,37 @@ ELEMENTS
 .top-nav-element a:link {
 	text-decoration: none;
 	padding: 20px 40px 20px 40px;
-	box-shadow: inset 0 0 0 0 #060606;
-	transition: box-shadow .3s ease-in-out;
+	box-shadow: inset 0 0 0 0 #113d6f;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
 }
 
 .top-nav-element a:visited {
 	text-decoration: none;
 	padding: 20px 40px 20px 40px;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
 }
 
 .top-nav-element a:hover {
 	text-decoration: none;
 	padding: 20px 40px 20px 40px;
-	box-shadow: inset 250px 0 0 0 #060606;
+	box-shadow: inset 255px 0 0 0 #113d6f;
+	border-width: 5px;
+	border-color: #3e648e;
+	border-style: solid;
 }
 
 .top-nav-element a:active {
 	text-decoration: none;
 	padding: 20px 40px 20px 40px;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
 }
 
 .nameplate {
