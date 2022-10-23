@@ -8,7 +8,7 @@ COLORS
 }
 
 /*Same green as classes*/
-.green-text {
+.class-green-text {
 	color: #4ec9b0;
 }
 
@@ -32,6 +32,15 @@ COLORS
 	color: #d5dcaa;
 }
 
+/*Same orange as strings*/
+.string-orange-text {
+	color: #d69d85;
+}
+
+/*Same gray as operators and semicolons*/
+.operator-gray-text {
+	color: #a9a9ab;
+}
 
 
 /*//////////////////////////
@@ -59,11 +68,20 @@ ELEMENTS
 }
 
 .profile-pic {
-	
+	max-width: 768px;
+	max-height: 768px;
 }
 
 .about-me {
-	
+	padding: 200px 0px;
+}
+
+.about-header {
+	display: inline;
+}
+
+.same-line {
+	display: inline-block;
 }
 
 .footer-carousel {
