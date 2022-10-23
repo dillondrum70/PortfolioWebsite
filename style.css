@@ -48,14 +48,44 @@ ELEMENTS
 //////////////////////////*/
 
 .top-nav {
-	
+	margin: 0px;
+	background-color: #101010;
+	display: block;	
+	align: center;
 }
 
-.top-nav a:hover {
-	
+.top-nav-element {
+	text-align: center;
+	font-size: 24px;
+	display: inline-block;
+	padding: 20px 0px 20px 0px;
+}
+
+.top-nav-element a:link {
+	text-decoration: none;
+	padding: 20px 40px 20px 40px;
+	box-shadow: inset 0 0 0 0 #060606;
+	transition: box-shadow .3s ease-in-out;
+}
+
+.top-nav-element a:visited {
+	text-decoration: none;
+	padding: 20px 40px 20px 40px;
+}
+
+.top-nav-element a:hover {
+	text-decoration: none;
+	padding: 20px 40px 20px 40px;
+	box-shadow: inset 250px 0 0 0 #060606;
+}
+
+.top-nav-element a:active {
+	text-decoration: none;
+	padding: 20px 40px 20px 40px;
 }
 
 .nameplate {
+	margin: 0px;
 	text-align: center;
 	align: center;
 	background-color: #1e1e1e;
@@ -70,6 +100,7 @@ ELEMENTS
 .profile-pic {
 	max-width: 768px;
 	max-height: 768px;
+	padding: 80px 80px 80px 40px;
 }
 
 .about-me {
