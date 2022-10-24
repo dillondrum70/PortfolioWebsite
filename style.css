@@ -71,9 +71,17 @@ ELEMENTS
 	padding: 20px 0px 20px 0px;
 }
 
+.top-nav-element ul {
+	display: none;
+}
+
+.top-nav li:hover > ul {
+	display: block;
+}
+
 .top-nav-element a:link {
 	text-decoration: none;
-	padding: 20px 40px 20px 40px;
+	padding: 20px 20px 20px 20px;
 	box-shadow: inset 0 0 0 0 #113d6f;
 	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
 	border-width: 0px;
@@ -83,7 +91,7 @@ ELEMENTS
 
 .top-nav-element a:visited {
 	text-decoration: none;
-	padding: 20px 40px 20px 40px;
+	padding: 20px 20px 20px 20px;
 	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
 	border-width: 0px;
 	border-color: #3e648e;
@@ -92,7 +100,7 @@ ELEMENTS
 
 .top-nav-element a:hover {
 	text-decoration: none;
-	padding: 20px 40px 20px 40px;
+	padding: 20px 20px 20px 20px;
 	box-shadow: inset 255px 0 0 0 #113d6f;
 	border-width: 5px;
 	border-color: #3e648e;
@@ -101,7 +109,60 @@ ELEMENTS
 
 .top-nav-element a:active {
 	text-decoration: none;
-	padding: 20px 40px 20px 40px;
+	padding: 20px 20px 20px 20px;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+}
+
+.vert-nav {
+	margin: 0px;
+	background-color: #060606;
+	display: block;	
+	align: center;
+}
+
+.vert-nav-element {
+	text-align: center;
+	font-size: 24px;
+	display: block;
+	padding: 20px 0px 20px 0px;
+}
+
+.vert-nav-element a:link {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	box-shadow: inset 0 0 0 0 #113d6f;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+	display: block;
+}
+
+.vert-nav-element a:visited {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+	display: block;
+}
+
+.vert-nav-element a:hover {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	box-shadow: inset 255px 0 0 0 #113d6f;
+	border-width: 5px;
+	border-color: #3e648e;
+	border-style: solid;
+	display: block;
+}
+
+.vert-nav-element a:active {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
 	border-width: 0px;
 	border-color: #3e648e;
 	border-style: solid;
@@ -121,13 +182,13 @@ ELEMENTS
 }
 
 .profile-pic {
-	max-width: 768px;
-	max-height: 768px;
+	max-width: auto;
+	max-height: 700px;
 	padding: 80px 80px 80px 40px;
 }
 
 .about-me {
-	padding: 200px 0px;
+	padding: 300px 0px;
 }
 
 .about-header {
