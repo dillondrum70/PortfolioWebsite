@@ -116,17 +116,17 @@ ELEMENTS
 }
 
 .vert-nav {
-	margin: 0px;
 	background-color: #060606;
-	display: block;	
+	display: none;	
 	align: center;
+	position: absolute;
 }
 
 .vert-nav-element {
 	text-align: center;
 	font-size: 24px;
 	display: block;
-	padding: 20px 0px 20px 0px;
+	/*padding: 20px 0px 20px 0px;*/
 }
 
 .vert-nav-element a:link {
