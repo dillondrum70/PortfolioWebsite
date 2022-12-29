@@ -57,29 +57,31 @@ COLORS
 ELEMENTS
 //////////////////////////*/
 
+
+
 .top-nav {
 	margin: 0px;
 	background-color: #101010;
 	display: block;	
 	align: center;
+	text-align: center;
 }
 
-.top-nav-element {
+.top-nav-elements {
+	text-align: center;
+	font-size: 24px;
+	display: inline-block;
+	/*padding: 20px 0px 20px 0px;*/
+}
+
+.top-nav-elements a {
 	text-align: center;
 	font-size: 24px;
 	display: inline-block;
 	padding: 20px 0px 20px 0px;
 }
 
-.top-nav-element ul {
-	display: none;
-}
-
-.top-nav li:hover > ul {
-	display: block;
-}
-
-.top-nav-element a:link {
+.top-nav-elements a:link {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	box-shadow: inset 0 0 0 0 #113d6f;
@@ -89,7 +91,7 @@ ELEMENTS
 	border-style: solid;
 }
 
-.top-nav-element a:visited {
+.top-nav-elements a:visited {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -98,7 +100,7 @@ ELEMENTS
 	border-style: solid;
 }
 
-.top-nav-element a:hover {
+.top-nav-elements a:hover {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	box-shadow: inset 255px 0 0 0 #113d6f;
@@ -107,7 +109,7 @@ ELEMENTS
 	border-style: solid;
 }
 
-.top-nav-element a:active {
+.top-nav-elements a:active {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	border-width: 0px;
@@ -116,20 +118,90 @@ ELEMENTS
 }
 
 .vert-nav {
-	background-color: #060606;
-	display: none;	
-	align: center;
-	position: absolute;
+	float: left;
+	background-color: inherit;
+	overflow: hidden;
 }
 
-.vert-nav-element {
+.vert-nav button{
 	text-align: center;
 	font-size: 24px;
+	display: inline-block;
+	padding: 20px 20px 20px 20px;
+	outline: none;
+	background-color: inherit;
+	font-family: inherit;
+	
+	box-shadow: inset 0 0 0 0 #113d6f;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+}
+
+.vert-nav button:link {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	box-shadow: inset 0 0 0 0 #113d6f;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+}
+
+.vert-nav button:visited {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+}
+
+.vert-nav button:hover {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	box-shadow: inset 255px 0 0 0 #113d6f;
+	border-width: 5px;
+	border-color: #3e648e;
+	border-style: solid;
+}
+
+.vert-nav button:active {
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	border-width: 0px;
+	border-color: #3e648e;
+	border-style: solid;
+}
+
+/*.vert-nav .vert-nav-button {
+	text-align: center;
+	font-size: 24px;
+	display: inline-block;
+	margin: 0px;
+	background-color: #101010;
+	display: block;	
+	align: center;
+	text-align: center;
+}*/
+
+.vert-nav:hover .vert-nav-elements {
 	display: block;
+}
+
+.vert-nav-elements {
+	text-align: center;
+	font-size: 24px;
+	display: none;
+	position: absolute;
+	background-color: #060606;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 	/*padding: 20px 0px 20px 0px;*/
 }
 
-.vert-nav-element a:link {
+.vert-nav-elements a:link {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	box-shadow: inset 0 0 0 0 #113d6f;
@@ -140,7 +212,7 @@ ELEMENTS
 	display: block;
 }
 
-.vert-nav-element a:visited {
+.vert-nav-elements a:visited {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -150,7 +222,7 @@ ELEMENTS
 	display: block;
 }
 
-.vert-nav-element a:hover {
+.vert-nav-elements a:hover {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	box-shadow: inset 255px 0 0 0 #113d6f;
@@ -160,7 +232,7 @@ ELEMENTS
 	display: block;
 }
 
-.vert-nav-element a:active {
+.vert-nav-elements a:active {
 	text-decoration: none;
 	padding: 20px 20px 20px 20px;
 	border-width: 0px;
@@ -175,6 +247,10 @@ ELEMENTS
 	background-color: #1e1e1e;
 	padding: 40px;
 	font-family: 'Cinzel', Handwriting;
+}
+
+.page-wrapper {
+	margin: 0px 100px 0px 100px;
 }
 
 .about-section {
