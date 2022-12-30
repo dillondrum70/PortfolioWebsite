@@ -1,3 +1,73 @@
 /*
 The classes specific to the project page
 */
+
+.banner-title {
+	text-align: center;
+}
+
+.divider-line {
+	height: 5px;
+	background-color: #4ec9b0;
+}
+
+hr.rounded {
+	border-top: 5px solid #4ec9b0;
+	border-radius: 5px;
+}
+
+
+
+/*Project Classes*/
+
+.project-carousel {
+	position: relative;
+	margin: 50px 25px 50px 25px;
+	text-align: center;
+	display: inline-block;
+}
+
+#project {
+	display: inline-grid;
+	
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+	background-color: #1e1e1e;
+	text-align: inherit;
+	
+	box-shadow: 0px 10px 20px #000000;
+	
+	transition: all .3s ease-in-out;
+}
+
+#project:hover {
+	transform: scale(1.1);
+	background-color: #303030;
+}
+
+#project #project-name-div {
+	width: 100%;
+	height: 100%;
+	background-color: #101010;
+	
+	text-algin: inherit;
+}
+
+#project #project-name-div #project-name{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#project #project-img-section {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+	margin-top: -50px;
+}
+
+#project #project-img {
+	max-width: 100%;
+	height: auto;
+	transform: scale(1.75);
+}
+
