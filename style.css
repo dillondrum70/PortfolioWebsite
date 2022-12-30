@@ -258,13 +258,26 @@ ELEMENTS
 }
 
 .profile-pic {
-	max-width: auto;
+	width: 40vw;
+	height: auto;
+	
+	/*max-width: 50vw;
 	max-height: 700px;
+	
+	min-width: 400px;
+	min-height: 400px;*/
+	
+	object-fit: contain;
+	
 	padding: 80px 80px 80px 40px;
+	
+	/*display: block;
+	margin-left: auto;
+	margin-right: auto;*/
 }
 
 .about-me {
-	padding: 300px 0px;
+	padding: 200px 0px 100px 0px;
 }
 
 .about-header {
