@@ -63,11 +63,8 @@ hr.rounded {
 }
 
 #project #project-img-section {
-	/*clip-margin: content-box;*/
 	overflow: hidden;
 	z-index: 2;
-	
-	/*margin-top: -50px;*/
 	
 	position: absolute;
 	
@@ -81,10 +78,16 @@ hr.rounded {
 	justify-content: center;
 	
 	height: 100%;
+
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .5s linear;
 }
 
 #project:hover #project-img-section {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s .5s, opacity .5s linear;
 }
 
 #project #project-img {
@@ -95,10 +98,14 @@ hr.rounded {
 	
 	height: 100%;
 	z-index: 2;
+
+	transition: transform .5s linear;
 }
 
 #project:hover #project-img {
 	transform: scale(1.75);
+
+	transition: transform .5s linear;
 }
 
 #project #project-description-section {
