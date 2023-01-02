@@ -103,7 +103,7 @@ hr.rounded {
 }
 
 #project:hover #project-img {
-	transform: scale(1.75);
+	transform: scale(2);
 
 	transition: transform .5s linear;
 }
