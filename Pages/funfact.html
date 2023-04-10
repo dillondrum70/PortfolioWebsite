@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/fact_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<div data-include="../Modules/Header.html"></div>
+		
+		<div class="page-wrapper">
+		
+			<h1 class="banner-title class-green-text"> Projects </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<div class="fact-carousel">
+				<a id="fact">
+					<div id="fact-name-div">
+						<h2 id="fact-name" class="name-blue-text"> Hobbies </h2>
+					</div>
+					
+					<div id="fact-description-section"> 
+						<h3 class="comment-green-text" id="fact-description">
+							/*
+							<br>
+							I love playing video games!  When I found my passion for programming, that's what turned me onto the path of making games!.
+							<br>
+							<br>
+							I also have a love of music, both making it and listening.
+							<br>
+							*/
+						</h3>
+					</div>
+				</a>
+				
+				<a id="fact">
+					<div id="fact-name-div">
+						<h2 id="fact-name" class="name-blue-text"> Favorite Movie </h2>
+					</div>
+					
+					<div id="fact-description-section"> 
+						<h3 class="comment-green-text" id="fact-description">
+							/*
+							<br>
+							Atlantis: the Lost Empire!  I love the earlier art styles of Disney and the technology always interested me.  Couple that with the spirit of exploration and I think it's a masterpiece.
+							<br>
+							*/
+						</h3>
+					</div>
+				</a>
+				
+				<a id="fact">
+					<div id="fact-name-div">
+						<h2 id="fact-name" class="name-blue-text"> Favorite Game </h2>
+					</div>
+					
+					<div id="fact-description-section"> 
+						<h3 class="comment-green-text" id="fact-description">
+							/*
+							<br>
+							This is a hard choice, but I really enjoyed Wolfenstein: New Order.  The story was very interesting and the gameplay was spot on.  I also like progression-based games so earning weapons and getting skills was fun.
+							<br>
+							*/
+						</h3>
+					</div>
+				</a>
+				
+				<a id="fact">
+					<div id="fact-name-div">
+						<h2 id="fact-name" class="name-blue-text"> Boy Scouts </h2>
+					</div>
+					
+					<div id="fact-description-section"> 
+						<h3 class="comment-green-text" id="fact-description">
+							/*
+							<br>
+							I started as a Cub Scout in first grade, later joined the BSA, and earned Eagle Scout.  The experience taught me about leadership and communication, as well as more hard skills like first aid and survival skills.
+							<br>
+							*/
+						</h3>
+					</div>
+				</a>
+				
+				<a id="fact">
+					<div id="fact-name-div">
+						<h2 id="fact-name" class="name-blue-text"> Order of the Arrow </h2>
+					</div>
+					
+					<div id="fact-description-section"> 
+						<h3 class="comment-green-text" id="fact-description">
+							/*
+							<br>
+							In addition to Scouts, I joined the Order of the Arrow which is the National Honors Society of the Scouts.  I earned Vigil, the highest "rank" in the order.
+							<br>
+							*/
+						</h3>
+					</div>
+				</a>
+				
+				<a id="fact">
+					<div id="fact-name-div">
+						<h2 id="fact-name" class="name-blue-text"> Tae Kwon Do </h2>
+					</div>
+					
+					<div id="fact-description-section"> 
+						<h3 class="comment-green-text" id="fact-description">
+							/*
+							<br>
+							I practiced Tae Kwon Do from pre-school until I left for college.  I am currently a Fourth Degree Black Belt.  I taught and helped teach classes for several years before I left.
+							<br>
+							*/
+						</h3>
+					</div>
+				</a>
+			</div>
+		
+		</div>
+		
+		
+	</body>
+
+	<footer>
+		<div data-include="../Modules/Footer.html"></div>
+	</footer>
+</html>

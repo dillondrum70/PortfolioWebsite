@@ -6,6 +6,9 @@
 		<link rel="stylesheet" href="/Styles/base.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
 		$(function () {
@@ -16,29 +19,11 @@
 		  })
 		})
 		</script>
+
 	</head>
 
 	<body>
-		<div class="nameplate">
-			<h1 class="purple-text">Dillon Drummond</h1>
-		</div>
-		
-		<div class="top-nav">
-			<div class="top-nav-elements">
-				<div class="vert-nav">
-					<button class="vert-nav-button function-yellow-text"> Menu()
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="vert-nav-elements">
-						<a href="/index.html" class="function-yellow-text">MainPage()</a>
-						<a href="/Pages/project.html" class="function-yellow-text">Projects()</a>
-						<a href="/Pages/funfact.html" class="function-yellow-text">FunFacts()</a>
-					</div>
-				</div>
-				
-				<a href="interactive.html" class="function-yellow-text">InteractiveMode()</a>
-			</div>
-		</div>
+		<div data-include="Modules/Header.html"></div>
 		
 		<div class="page-wrapper">
 		
@@ -66,10 +51,10 @@
 			</div>
 		
 		</div>
-		
-		<footer>
-			<div data-include="Modules/Footer.html"></div>
-		</footer>
 	</body>
+	
+	<footer>
+		<div data-include="Modules/Footer.html"></div>
+	</footer>
 
 </html>

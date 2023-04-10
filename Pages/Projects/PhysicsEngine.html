@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/project_page_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<div data-include="../../Modules/Header.html"></div>
+		
+		<div class="page-wrapper page-background">
+		
+			<h1 class="banner-title class-green-text"> Physics Engine </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
+			<section class="carousel" aria-label="Gallery">
+			  <ol class="carousel__viewport">
+				<li id="carousel__slide1"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper">
+				  
+					<img src="/Images/Physics1.png" alt="Physics 1" class="carousel-img">
+					
+					<a href="#carousel__slide2"
+					   class="carousel__prev">Go to last slide</a>
+					<a href="#carousel__slide2"
+					   class="carousel__next">Go to next slide</a>
+				  </div>
+				</li>
+				<li id="carousel__slide2"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/Physics2.png" alt="Physics 2" class="carousel-img">
+				  
+				  <a href="#carousel__slide1"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide1"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+			  </ol>
+			  <aside class="carousel__navigation">
+				<ol class="carousel__navigation-list">
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide1"
+					   class="carousel__navigation-button">Go to slide 1</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide2"
+					   class="carousel__navigation-button">Go to slide 2</a>
+				  </li>
+				</ol>
+			  </aside>
+			</section>
+			
+			<div class="itch">
+				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+				
+				<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/physics-engine">Itch_Project_Page()</a>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Features </h2>
+				
+				<hr class="rounded title-underline">
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Rigidbody Approach</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Sphere Collision</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Plane Collision</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Force Generators</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">AABB Box Colliders</h2>
+				</div>
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Spatial Partitioning</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Friction</h2>
+				</div>
+			</div>
+			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "Throughout my Game Physics course, I developed my own physics engine from scratch in C# using Unity.  None of the built in Unity physics components are used.  I developed my own version of a rigidbody that declares and modifies acceleration and velocity.  Different types of forces can be added and other features such as force generators that continuously apply forces to objects.  I have implemented Oct-Tree spatial partitioning and, while I added a binary space partitioning solution, I only had time to implement it for spheres so it has been removed from the final project.  I implemented spring components as well.  My final project was implementing friction and resting contacts so objects lose momentum when colliding with surfaces that have a coefficient of friction  lower than 1.
+					<br>
+					<br>
+					There are several controls to the project to showcase the features.
+					<br>
+					<br>
+					WASD - movement
+					<br>
+					<br>
+					Space - pause physics objects
+					<br>
+					<br>
+					T - switch collision methods (between naive collision and oct-tree spatial partitioning)
+					<br>
+					<br>
+					Enter - Hold to increase power and release to fire a projectile
+					<br>
+					<br>
+					F - switch projectile types, all but the standard cube and sphere disappear after a period of time
+					<br>
+					<br>
+					Left and Right Arrows - Increase/Decrease gravity in x axis
+					<br>
+					<br>
+					Up and Down Arrows - Increase/Decrease gravity in y axis
+					<br>
+					<br>
+					Page Up and Page Down - Increase/Decrease gravity in z axis
+					<br>
+					<br>
+					&emsp; It is worth mentioning that the benefits of spatial partitioning are most obvious when there are a large amount of objects in the scene.  The best way to do this is press Enter until the frame rate starts to drop, then press T to switch to Oct-Tree spatial partitioning to see the difference in performance.
+					<br>
+					<br>
+					&emsp; As far as the UI goes, FPS is updated every half second, "Type" refers to the collision method being used, and "Checks" refers to the number of collision checks since the last time the collision method was changed, not the number of collision checks per second."
+				</h2>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Tools </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Unity</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">C#</h2>
+				</div>
+			</div>
+			
+			<div class="reflection">
+			
+				<h2 class="section-title class-green-text"> Reflection </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "I had a lot of fun working on this project.  Many concepts I was familiar with such as velocity, acceleration, force, and other basic physics concepts, but the project also posed many challenges, space partitioning in particular.  I went for two methods, binary space partitioning and oct-tree space partitioning.  In the end, I did not have time to incorporate box colliders into my binary space partitioning implementation so I decided to keep my oct-tree spatial partitioning only since it performed the best of the two.
+					<br>
+					<br>
+					&emsp; This project was made over the course of a semester so, while there is a lot of content here, there is also a lot of content missing.  If I was to move forward with this project, I would want to add angular velocity and acceleration as well as support for rotated collisions."
+				</h2>
+			</div>
+		
+		</div>
+		
+		
+	</body>
+
+	<footer>
+		<div data-include="../../Modules/Footer.html"></div>
+	</footer>
+</html>

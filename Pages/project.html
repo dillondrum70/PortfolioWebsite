@@ -5,29 +5,25 @@
 		<link rel="stylesheet" href="/Styles/project_style.css">
 		<link rel="stylesheet" href="/Styles/base.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
 	</head>
 	
 	<body>
-		<div class="nameplate">
-			<h1 class="purple-text">Dillon Drummond</h1>
-		</div>
-		
-		<div class="top-nav">
-			<div class="top-nav-elements">
-				<div class="vert-nav">
-					<button class="vert-nav-button function-yellow-text"> Menu()
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="vert-nav-elements">
-						<a href="/index.html" class="function-yellow-text">MainPage()</a>
-						<a href="/Pages/project.html" class="function-yellow-text">Projects()</a>
-						<a href="/Pages/funfact.html" class="function-yellow-text">FunFacts()</a>
-					</div>
-				</div>
-				
-				<a href="interactive.html" class="function-yellow-text">InteractiveMode()</a>
-			</div>
-		</div>
+		<div data-include="../Modules/Header.html"></div>
 		
 		<div class="page-wrapper">
 		
@@ -59,7 +55,7 @@
 
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/GBA.html" id="project">
 					<div id="project-img-section">
 						<img src="/Images/GBA_Game2.PNG" alt="GBA Game" id="project-img">
 					</div>
@@ -79,7 +75,7 @@
 					</div>
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/Dilgine.html" id="project">
 					<div id="project-img-section">
 						<img src="/Images/DilPic.PNG" alt="Game Engine" id="project-img">
 					</div>
@@ -99,7 +95,7 @@
 					</div>
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/PatBurglar.html" id="project">
 					<div id="project-img-section">
 						<img src="/Images/Startscreen.png" alt="Pat Burglar" id="project-img">
 					</div>
@@ -119,7 +115,7 @@
 					</div>
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/PhysicsEngine.html" id="project">
 					<div id="project-img-section">
 						<img src="/Images/Physics1.png" alt="Physics Engine" id="project-img">
 					</div>
@@ -139,7 +135,7 @@
 					</div>
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/Platformer.html" id="project">
 					<div id="project-img-section">
 						<img src="/Images/PlatformerPlayer.png" alt="Platformer" id="project-img">
 					</div>
@@ -159,9 +155,9 @@
 					</div>
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/MechAttack.html" id="project">
 					<div id="project-img-section">
-						<img src="/Images/MechCinematic.png" alt="Mech Attack" id="project-img">
+						<img src="/Images/Mech_Cinematic.png" alt="Mech Attack" id="project-img">
 					</div>
 					
 					<div id="project-name-div">
@@ -179,7 +175,7 @@
 					</div>
 				</a>
 				
-				<a id="project">
+				<a href="/Pages/Projects/SWAT.html" id="project">
 					<div id="project-img-section">
 						<img src="/Images/SWAT.png" alt="SWAT" id="project-img">
 					</div>
@@ -206,20 +202,6 @@
 	</body>
 
 	<footer>
-			<div class="footer-title">
-				<h2 class="class-green-text">Contact Me</h2>
-			</div>
-		
-			<div class="footer-carousel">
-				<div class="footer-item">
-					<h3 class="type-blue-text">Email <a href="mailto:dillon.drummond@mymail.champlain.edu" target="_blank" class="name-blue-text">dillon.drummond@mymail.champlain.edu<h3 class="operator-gray-text" style="display: inline;">;</h3></a></h3> 
-				</div>
-				<div class="footer-item">
-					<h3 class="type-blue-text same-line">Phone&nbsp;<h3 class="name-blue-text same-line"> (336) 269-4073 <h3 class="operator-gray-text same-line">;</h3></h3></h3>
-				</div>
-				<div class="footer-item">
-					<h3 class="type-blue-text">LinkedIn <a href="https://www.linkedin.com/in/dillondrummond/" target="_blank" class="name-blue-text">https://www.linkedin.com/in/dillondrummond/<h3 class="operator-gray-text" style="display: inline;">;</h3></a></h3>
-				</div>
-			</div>
-		</footer>
+		<div data-include="../Modules/Footer.html"></div>
+	</footer>
 </html>

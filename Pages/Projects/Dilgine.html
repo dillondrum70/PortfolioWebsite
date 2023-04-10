@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/project_page_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<div data-include="../../Modules/Header.html"></div>
+		
+		<div class="page-wrapper page-background">
+		
+			<h1 class="banner-title class-green-text"> Dilgine </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
+			<section class="carousel" aria-label="Gallery">
+			  <ol class="carousel__viewport">
+				<li id="carousel__slide1"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper">
+				  
+					<img src="/Images/DilPic.png" alt="Dilgine" class="carousel-img">
+					
+					<a href="#carousel__slide2"
+					   class="carousel__prev">Go to last slide</a>
+					<a href="#carousel__slide2"
+					   class="carousel__next">Go to next slide</a>
+				  </div>
+				</li>
+				<li id="carousel__slide2"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/DilPic2.png" alt="Dilgine 2" class="carousel-img">
+				  
+				  <a href="#carousel__slide1"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide1"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+			  </ol>
+			  <aside class="carousel__navigation">
+				<ol class="carousel__navigation-list">
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide1"
+					   class="carousel__navigation-button">Go to slide 1</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide2"
+					   class="carousel__navigation-button">Go to slide 2</a>
+				  </li>
+				</ol>
+			  </aside>
+			</section>
+			
+			<div class="itch">
+				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+				
+				<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/dilgine">Itch_Project_Page()</a>
+			</div>
+			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "This project is the result of my Game Engine course where we created a game engine in C++ throughout the semester.  I used several different patterns and features such as a structure of arrays, component-based game objects, and level serialization.  I learned about CI/CD using Github Actions.  For my final project, I implemented the Vulkan graphics library into my final project with 3D mesh renderer components.  Models can be loaded in with textures and transformed in 3D space.
+					<br>
+					<br>
+					&emsp; As far as open-source software used in the engine, I use SDL for windows, Vulkan for rendering, glm for matrices and 3D math, tinyobjloader for loading OBJ files, and stb for loading images."
+				</h2>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Features </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">3D Rendering</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line"> .obj Models</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Textures</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Component-Based Objects</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Level Serialization</h2>
+				</div>
+			</div>
+			
+			<div class="reflection">
+			
+				<h2 class="section-title class-green-text"> Reflection </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "Were I to continue with this project, I would add a better method of loading in models by loading in models and textures from a file with paths to the model and image files.  I would also add 3D physics and the ability to create custom shaders as well.  Currently, the vertex and fragment shaders Vulkan uses are simply pass-through shaders."
+				</h2>
+			</div>
+		
+		</div>
+		
+		
+	</body>
+
+	<footer>
+		<div data-include="../../Modules/Footer.html"></div>
+	</footer>
+</html>

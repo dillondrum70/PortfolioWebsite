@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/project_page_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<div data-include="../../Modules/Header.html"></div>
+		
+		<div class="page-wrapper page-background">
+		
+			<h1 class="banner-title class-green-text"> SWAT </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
+			<section class="carousel" aria-label="Gallery">
+			  <ol class="carousel__viewport">
+				<li id="carousel__slide1"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper">
+				  
+					<img src="/Images/SWAT.png" alt="SWAT Gameplay 1" class="carousel-img">
+					
+					<a href="#carousel__slide4"
+					   class="carousel__prev">Go to last slide</a>
+					<a href="#carousel__slide2"
+					   class="carousel__next">Go to next slide</a>
+				  </div>
+				</li>
+				<li id="carousel__slide2"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/SWAT_Game2.png" alt="SWAT Gameplay 2" class="carousel-img">
+				  
+				  <a href="#carousel__slide1"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide3"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide3"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/SWAT_Light.png" alt="SWAT Gameplay Lighting" class="carousel-img">
+				  
+				  <a href="#carousel__slide2"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide4"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide4"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/SWAT_Title.png" alt="SWAT Title" class="carousel-img">
+				  
+				  <a href="#carousel__slide3"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide1"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+			  </ol>
+			  <aside class="carousel__navigation">
+				<ol class="carousel__navigation-list">
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide1"
+					   class="carousel__navigation-button">Go to slide 1</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide2"
+					   class="carousel__navigation-button">Go to slide 2</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide3"
+					   class="carousel__navigation-button">Go to slide 3</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide4"
+					   class="carousel__navigation-button">Go to slide 4</a>
+				  </li>
+				</ol>
+			  </aside>
+			</section>
+			
+			<div class="itch">
+				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+				
+				<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/swat">Itch_Project_Page()</a>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Features </h2>
+				
+				<hr class="rounded title-underline">
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Enemy AI</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Shooting and Reloading</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Ammo and Health Packs</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">2D Lighting</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Sound</h2>
+				</div>
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Laser and Saw Hazards</h2>
+				</div>
+			</div>
+			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "SWAT is a side-scrolling shooter where you use your rifle and pistol to dispatch enemies along the way to the exit.  Use WASD to move, space to jump, mouse to aim, R to reload, and left mouse to fire.  F turns your flashlight on and off.
+					<br>
+					<br>
+					&emsp; This is a one person production over the course of two weeks using Unity and C#.  All art, sound, and programming was done by me."
+				</h2>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Tools </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Unity</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">C#</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Inkscape</h2>
+				</div>
+			</div>
+			
+			<div class="reflection">
+			
+				<h2 class="section-title class-green-text"> Reflection </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "This experience taught me a lot.  It was my first project that I concepted and developed completely by myself.  I decided to play around with features I was not familiar with, namely lighting in 2D space and basic enemy AI.
+					<br>
+					<br>
+					&emsp; Given more time, I would add more gameplay surrounding the lighting and add a more tactical approach to the combat than "Run & Gun."  I would also use the knowledge I've acquired to make more quality of life changes such as visual contrast between the player, enemies, and the background."
+				</h2>
+			</div>
+		
+		</div>
+		
+		
+	</body>
+
+	<footer>
+		<div data-include="../../Modules/Footer.html"></div>
+	</footer>
+</html>
