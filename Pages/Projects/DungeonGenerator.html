@@ -5,6 +5,17 @@
 		<link rel="stylesheet" href="/Styles/project_page_style.css">
 		<link rel="stylesheet" href="/Styles/base.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
 	</head>
 	
 	<body>
