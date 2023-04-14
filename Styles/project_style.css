@@ -26,13 +26,13 @@ hr.rounded {
 }
 
 #project-featured {
-	display: block;
+	display: inline-grid;
 	
-	height: fit-content;
+	height: 42.5vw;
 	
 	margin-left: -100px; 
 	margin-bottom: -60vw; 
-	margin-top: 5vw;
+	padding-top: 5vw;
 	
 	transform: scale(1);
 	
@@ -56,12 +56,12 @@ hr.rounded {
 }
 
 #project-featured #project-banner-title {
-	width: 100vw;
+	height: inherit;
 	
 	position: relative;
-	left: 50vw;
+	left: 50%;
 	
-	transform: translate(-50vw, -50vw);
+	transform: translate(-50%, -110%);
 	z-index: 2;
 }
 
@@ -73,7 +73,7 @@ hr.rounded {
 	position: relative;
 	left: 50vw;
 	
-	transform: translate(0vw, -64vw);
+	transform: translate(0vw, -52.5vw);
 	z-index: 2;
 	
 	background-color: rgb(0,0,0); /* Fallback color */
@@ -82,7 +82,9 @@ hr.rounded {
 	
 	border: .1vw solid #ffffff;
 	
-	margin-left: 100px;
+	margin: auto;
+	padding-left: 20vw;
+	padding-right: 20vw;
 }
 
 #project {
