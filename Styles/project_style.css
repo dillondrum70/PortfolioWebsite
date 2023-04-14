@@ -43,7 +43,7 @@ hr.rounded {
 
 #project-featured:hover {
 	
-	transform: scale(1.01);
+	transform: scale(1.03);
 }
 
 #project-featured #project-banner {
@@ -54,7 +54,7 @@ hr.rounded {
 }
 
 #project-featured:hover #project-banner {
-	filter: blur(.6vw);
+	filter: blur(.8vw);
 }
 
 #project-featured #project-banner-title {

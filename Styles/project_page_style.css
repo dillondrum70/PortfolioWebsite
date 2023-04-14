@@ -413,6 +413,26 @@ ol, li {
     border-radius: 40px;
 }
 
+.responsibilities-text {
+	text-align: center;
+	display: inline-block;
+	padding: 0px 40px 0px 40px;
+	margin: 20px;
+	
+	width: auto;
+    height: 100%;
+    background-color: #090909;
+    border-radius: 40px;
+	
+	transition: background-color .3s ease-in-out;
+	transition: transform .3s ease-in-out;
+}
+
+.responsibilities-text:hover {
+	background-color: #202020;
+	transform: scale(1.1);
+}
+
 .reflection {
 	padding: 100px;
 }
