@@ -258,7 +258,7 @@ ELEMENTS
 
 .page-wrapper {
 	padding-top: 10px;
-	margin: 0px 100px 0px 100px;
+	margin: 0px 5vw 0px 5vw;
 }
 
 .about-section {
@@ -386,4 +386,8 @@ ELEMENTS
 	color: #ffffff;
 	padding: 10px;
 	margin: 20px;
+}
+
+.gif {
+	width: 80%;
 }

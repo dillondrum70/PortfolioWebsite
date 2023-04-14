@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="/Styles/style.css">
 		<link rel="stylesheet" href="/Styles/project_page_style.css">
 		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="/Styles/fatf_style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
@@ -93,6 +94,12 @@
 			  </aside>
 			</section>
 			
+			<div style="max-width: 1024px; margin: 10vw auto;">
+				<div style="position: relative; padding-bottom: 75%; height: 0px;">
+					<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/PyZHM1zdV0U" title="Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			
 			<div class="itch">
 				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
 				
@@ -106,36 +113,126 @@
 				
 				<hr class="rounded title-underline">
 				
-				<div style="background: #303030">
+				<div style="background: #151515">
+				
+					<script>
+						function ShowSection(sectionName) {
+							var i;
+							var sections = document.getElementsByClassName("mechanic");
+							for(i = 0; i < sections.length; i++) {
+								sections[i].style.display = "none";
+							}
+							
+							document.getElementById(sectionName).style.display = "block";
+						}
+					</script>
 								
-					<a class="responsibilities-text">
+					<a onclick="ShowSection('Gameplay')" class="responsibilities-text">
 						<h2 class="name-blue-text same-line">Gameplay</h2>
 					</a>
 					
-					<a class="responsibilities-text">
+					<a onclick="ShowSection('Diegetic UI')" class="responsibilities-text">
 						<h2 class="name-blue-text same-line">Diegetic UI</h2>
 					</a>
 				
-					<a class="responsibilities-text">
+					<a onclick="ShowSection('Graphics')" class="responsibilities-text">
 						<h2 class="name-blue-text same-line">Graphics</h2>
 					</a>
 				
-					<a class="responsibilities-text">
-						<h2 class="name-blue-text same-line">Animation</h2>
+					<a onclick="ShowSection('Animation + IK')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line">Animation + Inverse Kinematics</h2>
 					</a>
 				
-					<a class="responsibilities-text">
-						<h2 class="name-blue-text same-line">Inverse Kinematics</h2>
-					</a>
-				
-					<a class="responsibilities-text">
+					<a onclick="ShowSection('Sound Implementation')" class="responsibilities-text">
 						<h2 class="name-blue-text same-line">Sound Implementation</h2>
 					</a>
 
-					<a class="responsibilities-text">
+					<a onclick="ShowSection('VFX Creation + Implementation')" class="responsibilities-text">
 						<h2 class="name-blue-text same-line">VFX Creation + Implementation</h2>
 					</a>
 				
+				</div>
+				
+				<div id="Gameplay" class="mechanic" style="display: block">
+					<h1 class="type-blue-text">
+						Gameplay
+					</h1>
+					
+					<img src="/GIFs/FAtF_SlamTilt.gif" alt="Slam Tilt" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; "Each programmer on the project was a gameplay programmer in many aspects but I had the heaviest burden of those features.  I created our movement system since the Unity CharacterController class was too narrow for our use case.  Additionally, I made the majority of the machine components like the multiball, gizmos like the bomb copter and bumpers, and the flippers.  I was also responsible for the slam tilt, one of our main mechanics as it fulfilled the mandate for gravity modulation.
+						<br>
+						<br>
+						&emsp; Of those, one of the features I am most proud of is the slam tilt.  The early problem that we had to tackle was how to keep the player, ball, or other dynamic elements from clipping when rotating the playing field.  Very quickly, before any code was written, I reached the conclusion that rotating the playing field was not a viable option.  Not just because of the clipping, but also because tilting could easily cause the ball and enemies to pop up off the playing field and possibly fall over the side.  Ultimately I decided that it wasn't the laying field that needed to rotate, but the player and their surroundings.  If I could roate the surroundings, the player, and the camera correctly, then the player would never know the difference.  There were several times I even tricked myself into thinking the machine was tilted while playing."
+					</h3>
+					
+					<img src="/GIFs/FAtF_SlamTilt.gif" alt="Slam Tilt" class="gif">
+				</div>
+				
+				<div id="Diegetic UI" class="mechanic">
+					<h1 class="type-blue-text">
+						Diegetic UI
+					</h1>
+					
+					<img src="/GIFs/FAtF_DiegeticMainMenu.gif" alt="Diegetic Main Menu" class="gif">
+										
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; "Something we knew from the beginning was that we wanted to have a lot of diegetic menus and UI.  We realized that the game became unmanageable if all of the UI was diegetic in worldspace and could not come up with ways to display the rest of the information diegetically so we had to have a HUD after all, but we still managed to get the menus and the score in a place we wanted.  We also wanted more settings as well, but I did not have enough time to implement them all and our producer decided that they were out of scope and we moved on to fixing bugs and polishing the game.  We were very happy with the outcome.
+						<br>
+						<br>
+						&emsp; The UI on the backboard is simply worldspace text boxes with a font and some bloom to make it appear as though the text is made of glowing lights, but the menus were more complicated.  Since we used Cinemachine for our cameras, some of the heavy-lifting was done for us.  I created a system that combined Unity's EventSystem and Cinemachine so the player could switch to separate menus in other parts of the machine.  Some challenges were learning Cinemachine and dealing with difficulties that arose from Unity's Input System meshing with it's UI systems."
+					</h3>
+					
+					<img src="/GIFs/FAtF_DiegeticPauseMenu.gif" alt="Diegetic Pause Menu" class="gif">
+				</div>
+				
+				<div id="Graphics" class="mechanic">
+					<h1 class="type-blue-text">
+						Graphics
+					</h1>
+					
+					<img src="/GIFs/FAtF_Shield.gif" alt="Shield" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; "While I have had experience in graphics before, this was my first foray into being the official graphics programmer on a project.  This manifested itself in many ways.  I would have liked to use HLSL and write my own shaders from scratch, but we did not have the time for me to do that.  I am more familiar with GLSL and had not yet learned how to use Unity's specific shader code.  Instead, I opted to use shadergraph mostly because of the benefit of speed for prototyping and implementation.  I created many effects and helper shaders.  While it is hard to separate VFX and Animation Programming from the more generic graphics, I will do my best.
+						<br>
+						<br>
+						&emsp; One of my favorite shaders to work on which blurs the borders of visual effects and graphics programming is the hex-shield shader.  Shields are one of my favorite effects because they can be made so unique and configurable.  Every shield can look different in some way.  It goes a long way to replace an inisible wall with something more tangible.  Since the theme of our game was more tech-based, it wasn't a stretch to incorporate shields.  Plus I really like the hexagonal patterns.  I wanted this shader to have a lot of options so that the designers and artists could tweak it if they wanted to.
+						<br>
+						<br>
+						&emsp; I helped to give the artists more options in their custom shaders by adding simple things like color and emission multipliers, but I also created effects like the blurring around the machine.  We wanted the player to focus on the gameplay and the inside of the machine.  Additionally, we did not want to spend too much time on making things outside the machine have high fidelity, polished visuals since they were ultimately cosmetic and, again, not the focus of the gameplay.  We originally tried using Depth of Field for a quick blur, but obviously, the intensity of the blur changed with distance so if we wanted the player to see the backboard of the machine clearly and not the person playing the game at any point, we needed to come up with a different solution.  This ended up being a simple box blur applied to six planes that surround the machine.  This way we can include the entire machine and the pause menu and not worry about accidental blurring."
+					</h3>
+					
+					<img src="/Images/FAtF_Blur.png" alt="Blur" class="gif">
+					
+				</div>
+				
+				<div id="Animation + IK" class="mechanic">
+					<h1 class="type-blue-text">
+						Animation + Inverse Kinematics
+					</h1>
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; "Animation + Inverse Kinematics"
+					</h3>
+				</div>
+				
+				<div id="Sound Implementation" class="mechanic">
+					<h1 class="type-blue-text">
+						Sound Implementation
+					</h1>
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; "Sound Implementation"
+					</h3>
+				</div>
+				
+				<div id="VFX Creation + Implementation" class="mechanic">
+					<h1 class="type-blue-text">
+						VFX Creation + Implementation
+					</h1>
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; "VFX Creation + Implementation"
+					</h3>
 				</div>
 			</div>
 			
@@ -198,18 +295,6 @@
 					<br>
 					&emsp; If I were to do anything differently, I would have increased my communication with designers earlier in the project.  While I struggled to do so early in the project to follow documentation, I quickly learned to closely follow it to see how a mechanic is supposed to work.  However, often I would create a mechanic to match those specifications and later be told that the documentation is out of date.  A lot of development time could have been saved if I had directly asked designers about the features I was working on.  By the end of the project, our communication was much stronger and we worked as a cohesive unit.  Something I think we could have improved on as a team was our concepting speed.  In a ten-week project, it is important to iron out the concept early, but we had a disorganized process and lost the first week of concepting.  In the second week, we brainstormed and allowed the designers to create concepts from our ideas.  Unfortunately, these too were unpolished and we spent a lot of devleopment time finding the fun in our game.  Often it seems the concepting phase is discounted, but we have learned that it is one of the most critical junctures in a games development and will not underestimate it in the future.
 				</h2>
-			</div>
-
-			<div class="mechanics">
-			
-				<h2 class="section-title class-green-text"> Mechanic Case Studies </h2>
-					
-				<hr class="rounded title-underline">
-
-				<div class="mechanics-grid">
-					
-				</div>
-				
 			</div>
 		</div>
 	</body>

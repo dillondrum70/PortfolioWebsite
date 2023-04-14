@@ -51,7 +51,7 @@ hr.rounded {
 	text-decoration: none;
 	
 	display: block;
-	width: 40%;
+	width: 60%;
 	margin-top: 100px;
 	margin-bottom: 100px;
 	margin-left: auto;
@@ -431,23 +431,15 @@ ol, li {
 .responsibilities-text:hover {
 	background-color: #202020;
 	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.responsibilities-text:active {
+	background-color: #202020;
+	transform: scale(1.1);
+	cursor: pointer;
 }
 
 .reflection {
 	padding: 100px;
-}
-
-.mechanics {
-	padding: 0px 100px 100px 100px;
-}
-
-.mechanics-grid {
-	position: relative;
-	margin: 50px 25px 50px 25px;
-	text-align: center;
-	display: inline-block;
-}
-
-.mechanic {
-
 }
