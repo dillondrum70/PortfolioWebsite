@@ -16,8 +16,6 @@ hr.rounded {
 	border-radius: 5px;
 }
 
-
-
 /*Project Classes*/
 
 .project-carousel {
@@ -25,6 +23,66 @@ hr.rounded {
 	margin: 50px 25px 50px 25px;
 	text-align: center;
 	display: inline-block;
+}
+
+#project-featured {
+	display: block;
+	
+	height: fit-content;
+	
+	margin-left: -100px; 
+	margin-bottom: -60vw; 
+	margin-top: 5vw;
+	
+	transform: scale(1);
+	
+	transition: transform .3s ease-in-out;
+}
+
+#project-featured:hover {
+	
+	transform: scale(1.01);
+}
+
+#project-featured #project-banner {
+	width: 100vw;
+	
+	filter: blur(.2vw);
+	transition: filter .3s ease-in-out;
+}
+
+#project-featured:hover #project-banner {
+	filter: blur(.6vw);
+}
+
+#project-featured #project-banner-title {
+	width: 100vw;
+	
+	position: relative;
+	left: 50vw;
+	
+	transform: translate(-50vw, -50vw);
+	z-index: 2;
+}
+
+#project-featured #project-banner-text {
+	text-align:center;
+	font-size: 2vw;
+	color: white
+	
+	position: relative;
+	left: 50vw;
+	
+	transform: translate(0vw, -64vw);
+	z-index: 2;
+	
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+	padding: 1vw;
+	
+	border: .1vw solid #ffffff;
+	
+	margin-left: 100px;
 }
 
 #project {
