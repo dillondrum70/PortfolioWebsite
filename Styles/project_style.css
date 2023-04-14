@@ -27,6 +27,8 @@ hr.rounded {
 
 #project-featured {
 	display: inline-grid;
+
+	text-decoration: none;
 	
 	height: 42.5vw;
 	
@@ -68,10 +70,10 @@ hr.rounded {
 #project-featured #project-banner-text {
 	text-align:center;
 	font-size: 2vw;
-	color: white
+	color: white;
 	
 	position: relative;
-	left: 50vw;
+	/*left: 50vw;*/
 	
 	transform: translate(0vw, -52.5vw);
 	z-index: 2;

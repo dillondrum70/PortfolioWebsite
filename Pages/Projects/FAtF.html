@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/project_page_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<!--Background Image-->
+		<img src="../../Images/Pinball.png" style="position: fixed; height: 100%; filter: blur(8px); z-index: -1">
+
+		<div data-include="../../Modules/Header.html"></div>
+		
+		<div class="page-wrapper page-background">
+		
+			<h1 class="banner-title class-green-text"> Flip Against the Frontier </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
+			<section class="carousel" aria-label="Gallery">
+			  <ol class="carousel__viewport">
+				<li id="carousel__slide1"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper">
+				  
+					<img src="/Images/Mech_Cinematic.png" alt="Mech Attack Cinematic" class="carousel-img">
+					
+					<a href="#carousel__slide3"
+					   class="carousel__prev">Go to last slide</a>
+					<a href="#carousel__slide2"
+					   class="carousel__next">Go to next slide</a>
+				  </div>
+				</li>
+				<li id="carousel__slide2"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/Mech_Game.png" alt="Mech Attack Gameplay" class="carousel-img">
+				  
+				  <a href="#carousel__slide1"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide3"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide3"
+					tabindex="0"
+					class="carousel__slide">
+				  <div class="carousel__snapper"></div>
+				  
+				  <img src="/Images/Mech_NightVision.png" alt="Mech Attack Night Vision" class="carousel-img">
+				  
+				  <a href="#carousel__slide2"
+					 class="carousel__prev">Go to previous slide</a>
+				  <a href="#carousel__slide1"
+					 class="carousel__next">Go to next slide</a>
+				</li>
+			  </ol>
+			  <aside class="carousel__navigation">
+				<ol class="carousel__navigation-list">
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide1"
+					   class="carousel__navigation-button">Go to slide 1</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide2"
+					   class="carousel__navigation-button">Go to slide 2</a>
+				  </li>
+				  <li class="carousel__navigation-item">
+					<a href="#carousel__slide3"
+					   class="carousel__navigation-button">Go to slide 3</a>
+				  </li>
+				</ol>
+			  </aside>
+			</section>
+			
+			<div class="itch">
+				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+				
+				<a class="itch-link function-yellow-text" target="_blank" href="https://snidepiano9157.itch.io/pinball">Itch_Project_Page()</a>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Programming Responsibilities </h2>
+				
+				<hr class="rounded title-underline">
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Gameplay</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Diegetic UI</h2>
+				</div>
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Graphics</h2>
+				</div>
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Animation</h2>
+				</div>
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Inverse Kinematics</h2>
+				</div>
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Sound Implementation</h2>
+				</div>
+
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">VFX Creation + Implementation</h2>
+				</div>
+			</div>
+			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "Flip Against the Frontier is an action-packed arcade pinball game where you play as a character inside the infamously difficult pinball machine, The Frontier.  You must destroy enemies, build gizmos,
+					and survive as long as possible to reach the highest score you can!"
+					<br>
+					<br>
+					&emsp; This project was part of the 2023 Ubisoft Game Lab Competition in Montreal.  We had a max of eight developers with ten weeks of production from the release of the theme, Arcade, and the mandate which required at least one gravity mechanic, 
+					one creation mechanic, and one destruction mechanic as well as a leaderboard.  Our team consisted of three programmers, two artists, two designers, and one producer."
+				</h2>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Tools </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Unity</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">C#</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Shadergraph</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line">Visual Effect Graph</h2>
+				</div>
+			</div>
+			
+			<div class="reflection">
+			
+				<h2 class="section-title class-green-text"> Reflection </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; ""
+				</h2>
+			</div>
+		
+		</div>
+		
+		
+	</body>
+
+	<footer>
+		<div data-include="../../Modules/Footer.html"></div>
+	</footer>
+</html>
