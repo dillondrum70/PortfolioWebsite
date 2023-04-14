@@ -257,6 +257,7 @@ ELEMENTS
 }
 
 .page-wrapper {
+	padding-top: 10px;
 	margin: 0px 100px 0px 100px;
 }
 

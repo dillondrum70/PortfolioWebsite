@@ -416,3 +416,18 @@ ol, li {
 .reflection {
 	padding: 100px;
 }
+
+.mechanics {
+	padding: 0px 100px 100px 100px;
+}
+
+.mechanics-grid {
+	position: relative;
+	margin: 50px 25px 50px 25px;
+	text-align: center;
+	display: inline-block;
+}
+
+.mechanic {
+
+}
