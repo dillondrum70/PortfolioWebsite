@@ -125,7 +125,7 @@
 			<div class="tools-section">
 				<h2 class="section-title class-green-text"> Programming Responsibilities </h2>
 				
-				<h3 style="color: #202020"> (Click to see more) </h3>
+				<h3 style="color: #101010"> (Click to see more) </h3>
 				
 				<hr class="rounded title-underline">
 				
@@ -228,6 +228,9 @@
 					<h1 class="type-blue-text">
 						Animation + Inverse Kinematics
 					</h1>
+					
+					<img src="/GIFs/FAtF_Animations.gif" alt="Diegetic Pause Menu" class="gif">
+					
 					<h3 class="mechanic-description string-orange-text">
 						&emsp; "Animations were at the forefront of our worries for a while.  Early on, we knew that we would need to incorporate inverse kinematics from the feedback our mentors gave us.  When there is a slanted surface that a character stands on, it is very obvious when their feet do not align with the surface they are on.  We also knew that we would have to nail the animations in order to get a good feeling on the character side of the 3 C's.  The issue was that animations, of course, would come much later in the project so that work had to be postponed.
 						<br>
@@ -237,6 +240,12 @@
 						<br>
 						&emsp; What was really exciting was the applications of what I had learned in the process of programming the character's animations.  With my newfound knowledge of inverse kinematics, I realized that animating the big brother, the person playing the pinball machine, would be much easier.  Originally, we planned to have a dark silhouette standing still in front of the machine since we had to explain that part somehow.  I managed to convince the team of my idea and our character artist gave me a model of a man he was working on for his character art class.  I used an idle animation and had the hands attach to the side of the machine.  During the animation, he would move side to side occassionally and it looked very organic.  I had the head look at the first unlocked ball and, if no unlocked balls were on the field, then he would look at the player.  Lastly, during the slam tilt, I had him rotate only about 75% of the amount that the room tilted around the machine.  This gave the illusion that he was moving the machine.  The blurring used around the machine also allowed Justin to do a rush job on the texture so that this cosmetic feature did not take too much development time.  In total, this feature took me less than an hour and a half.  It was another one of those smaller features we didn't originally plan, but once it was in the game, we couldn't imagine not having it."
 					</h3>
+					
+					<img src="/GIFs/FAtF_BigBrother.gif" alt="Diegetic Pause Menu" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text" style="text-align: center;">
+						"Pictured Above: animations and IK for big brother"
+					<h3>
 				</div>
 				
 				<div id="Sound Implementation" class="mechanic">
@@ -244,17 +253,36 @@
 						Sound Implementation
 					</h1>
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; "Sound Implementation"
+						&emsp; "The sound on Flip Against the Frontier was mainly outsourced.  One of our designers kept in contact with sound designers on Champlain's main campus and made sure all the sounds got made, but programmer assistance was needed to actually play the sounds in-game.  Since there was not much time, we opted for a singleton pattern so that accessing sounds was easy and so that designers only had to look in one place for all the sounds.  I knew that we would be sacrificing flexibility that would normally end up costing more time later, but I was confident that the scope of our project did not require that flexibility and that development time would suffer from implementing it.  In fact, the pattern worked to our benefit later when we implemented a volume system.  It did not take long since all the sounds went through the singleton.  The only things I would change if I could do it again would be to use more events throughout the code-base so that designers could implement new sounds more easily rather than having to play most sounds through code and to make a simpler process for adding new sounds.  Of course, if I had more time, I may have tried a better system than a singleton as well.
+						<br>
+						<br>
+						&emsp; I created a tool to give designers as much control over each sound as possible.  The sound system functioned on scriptable objects called SoundEffects.  Each sound effect is a separate sound that is triggered by some event.  It supported multiple clips that would be randomly selected each time the SoundEffect was played.  This was mainly for things like footsteps that would be played repetitively and gave some uniqueness to each sound.  The pitch could be randomized within the range specified by the pitch modulation range and there were options for things like base volume, sound type (for volume settings), whether or not the sound is looped, and a falloff distance category that had some presets for common falloff ranges (like enemies and machine parts) but supported custom falloff curves that used animation curves."
 					</h3>
+					
+					<img src="/Images/FAtF_SoundEffect.png" alt="Sound Effect" style="height: 80%">
 				</div>
 				
 				<div id="VFX Creation + Implementation" class="mechanic">
 					<h1 class="type-blue-text">
 						VFX Creation + Implementation
 					</h1>
+					
+					<div style="display: inline-block;">
+						<img src="/GIFs/FAtF_MagnetVFX.gif" alt="Magnet Radius VFX" style="height: 20vw; float: left; padding: 1vw;">
+						<img src="/GIFs/FAtF_HologramButtons.gif" alt="Hologram Buttons" style="height: 20vw; float: left; padding: 1vw;">
+					</div>
+					
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; "VFX Creation + Implementation"
+						&emsp; "VFX is a newfound passion of mine that I did not realize I had.  As the project was coming into the last few weeks and art was being implemented, we realized there was still a lot of texturing and modeling that needed to be done.  We were not sure whether or not the artists would have time to do all the VFX so we decided to pivot.  Since I was finishing my tasks fairly quickly, VFX became my stretch goals and I started making them whenever I had time.  I ended up making about half the VFX in the final build.  It ended up being the right choice because, even once artists started working on VFX, we were still creating them up until last week of the project.  I became very familiar with Unity's particle system, Visual Effet Graph, and Shadergraph from working on VFX.  Once artists were able to work on the VFX, I had to turn my focus to implementing all of those VFX and fixing bugs.
+						<br>
+						<br>
+						&emsp; Some of my favorite effects I made were the spawning of enemies, impact effects when hitting the pinball, the attracting lines between the bat and the ball, the magnet tower's attracting effect, and the hologram buttons in the UI.  Each time I started a new effect, the creative freedom made me realize why artists seem to love their jobs so much.  We made sure that developing each of the visual effects had an impact on the gameplay somehow.  A big effect was hitting the pinball.  For the charged swing (at the request of designers) I combined a lot of visual and haptic effects like camera shake, controller rumble, impact lines on the edge of the screen, and freeze frame to make hitting the ball as satisfying and impactful as possible.  The only part of that effect I did not do was the actual collision impact between the bat and the ball which was done by our environment artist, Maddi."
 					</h3>
+					
+					<div style="display: inline-block;">
+						<img src="/GIFs/FAtF_EnemySpawn.gif" alt="Enemy Spawn VFX" style="height: 20vw; float: left; padding: 1vw;">
+						<img src="/GIFs/FAtF_ChargedSwing.gif" alt="Enemy Spawn VFX" style="height: 20vw; float: left; padding: 1vw;">
+					</div>
 				</div>
 			</div>
 			
