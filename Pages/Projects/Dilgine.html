@@ -30,54 +30,44 @@
 			<h1 class="banner-title class-green-text"> Dilgine </h1>
 			
 			<hr class="rounded divider-line">
-			
-			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
-			<section class="carousel" aria-label="Gallery">
-			  <ol class="carousel__viewport">
-				<li id="carousel__slide1"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper">
-				  
+
+			<!-- Based on source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+			<div class="carousel-container">
+				<!-- Slides -->
+				<div class="carousel-slide">
 					<img src="/Images/DilPic.png" alt="Dilgine" class="carousel-img">
-					
-					<a href="#carousel__slide2"
-					   class="carousel__prev">Go to last slide</a>
-					<a href="#carousel__slide2"
-					   class="carousel__next">Go to next slide</a>
-				  </div>
-				</li>
-				<li id="carousel__slide2"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/DilPic2.png" alt="Dilgine 2" class="carousel-img">
-				  
-				  <a href="#carousel__slide1"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide1"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-			  </ol>
-			  <aside class="carousel__navigation">
-				<ol class="carousel__navigation-list">
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide1"
-					   class="carousel__navigation-button">Go to slide 1</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide2"
-					   class="carousel__navigation-button">Go to slide 2</a>
-				  </li>
-				</ol>
-			  </aside>
-			</section>
-			
-			<div class="itch">
-				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+				</div>
 				
-				<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/dilgine">Itch_Project_Page()</a>
+				<div class="carousel-slide">
+					<img src="/Images/DilPic2.png" alt="Dilgine 2" class="carousel-img">
+				</div>
+				
+				<!-- Navigation Buttons -->
+				<a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Thumbnails -->
+				<div class="thumbnail-row" style="left: -33%;">
+					<div class="thumbnail-centering" style="left: 33%;">
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/DilPic.png" style="width:100%" onclick="currentSlide(1)" alt="Dilgine">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/DilPic2.png" style="width:100%" onclick="currentSlide(2)" alt="Dilgine 2">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script src="/js/image-carousel.js"></script>
+			<!-- End of source -->
+			
+			<div class="itch-container">
+				<div class="itch">
+					<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+					
+					<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/dilgine">Itch_Project_Page()</a>
+				</div>
 			</div>
 			
 			<div class="overview">

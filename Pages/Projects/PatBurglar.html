@@ -30,102 +30,65 @@
 			<h1 class="banner-title class-green-text"> Pat Burglar </h1>
 			
 			<hr class="rounded divider-line">
-			
-			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
-			<section class="carousel" aria-label="Gallery">
-			  <ol class="carousel__viewport">
-				<li id="carousel__slide1"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper">
-				  
+
+			<!-- Based on source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+			<div class="carousel-container">
+				<!-- Slides -->
+				<div class="carousel-slide">
 					<img src="/Images/PatGame.png" alt="Pat Burglar Gameplay" class="carousel-img">
-					
-					<a href="#carousel__slide5"
-					   class="carousel__prev">Go to last slide</a>
-					<a href="#carousel__slide2"
-					   class="carousel__next">Go to next slide</a>
-				  </div>
-				</li>
-				<li id="carousel__slide2"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/PatTitle.png" alt="PatBurglar Title" class="carousel-img">
-				  
-				  <a href="#carousel__slide1"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide3"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-				<li id="carousel__slide3"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/PatAccessible.png" alt="Pat Burglar Accessibility" class="carousel-img">
-				  
-				  <a href="#carousel__slide2"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide4"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-				<li id="carousel__slide4"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/PatEnd.png" alt="Pat Burglar End" class="carousel-img">
-				  
-				  <a href="#carousel__slide3"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide5"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-				<li id="carousel__slide5"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/PatCredits.png" alt="Pat Burglar Credits" class="carousel-img">
-				  
-				  <a href="#carousel__slide4"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide1"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-			  </ol>
-			  <aside class="carousel__navigation">
-				<ol class="carousel__navigation-list">
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide1"
-					   class="carousel__navigation-button">Go to slide 1</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide2"
-					   class="carousel__navigation-button">Go to slide 2</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide3"
-					   class="carousel__navigation-button">Go to slide 3</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide4"
-					   class="carousel__navigation-button">Go to slide 4</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide5"
-					   class="carousel__navigation-button">Go to slide 5</a>
-				  </li>
-				</ol>
-			  </aside>
-			</section>
-			
-			<div class="itch">
-				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+				</div>
 				
-				<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/pat-burglar">Itch_Project_Page()</a>
+				<div class="carousel-slide">
+					<img src="/Images/PatTitle.png" alt="PatBurglar Title" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/PatAccessible.png" alt="Pat Burglar Accessibility" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/PatEnd.png" alt="Pat Burglar End" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/PatCredits.png" alt="Pat Burglar Credits" class="carousel-img">
+				</div>
+				
+				<!-- Navigation Buttons -->
+				<a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Thumbnails -->
+				<div class="thumbnail-row" style="left: -4.5vw;">
+					<div class="thumbnail-centering" style="left: 4.5vw;">
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/PatGame.png" style="width:100%" onclick="currentSlide(1)" alt="Pat Burglar Gameplay">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/PatTitle.png" style="width:100%" onclick="currentSlide(2)" alt="PatBurglar Title">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/PatAccessible.png" style="width:100%" onclick="currentSlide(3)" alt="Pat Burglar Accessibility">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/PatEnd.png" style="width:100%" onclick="currentSlide(3)" alt="Pat Burglar End">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/PatCredits.png" style="width:100%" onclick="currentSlide(3)" alt="Pat Burglar Credits">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script src="/js/image-carousel.js"></script>
+			<!-- End of source -->
+			
+			<div class="itch-container">
+				<div class="itch">
+					<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+					
+					<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/pat-burglar">Itch_Project_Page()</a>
+				</div>
 			</div>
 			
 			<div class="tools-section">

@@ -30,70 +30,51 @@
 			<h1 class="banner-title class-green-text"> Platformer </h1>
 			
 			<hr class="rounded divider-line">
-			
-			<!-- Source: https://css-tricks.com/css-only-carousel/ !-->
-			<section class="carousel" aria-label="Gallery">
-			  <ol class="carousel__viewport">
-				<li id="carousel__slide1"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper">
-				  
-					<img src="/Images/PlatformerPlayer.png" alt="Platformer Player" class="carousel-img">
-					
-					<a href="#carousel__slide3"
-					   class="carousel__prev">Go to last slide</a>
-					<a href="#carousel__slide2"
-					   class="carousel__next">Go to next slide</a>
-				  </div>
-				</li>
-				<li id="carousel__slide2"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/Platformer.png" alt="Platformer Game" class="carousel-img">
-				  
-				  <a href="#carousel__slide1"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide3"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-				<li id="carousel__slide3"
-					tabindex="0"
-					class="carousel__slide">
-				  <div class="carousel__snapper"></div>
-				  
-				  <img src="/Images/Options.png" alt="Options" class="carousel-img">
-				  
-				  <a href="#carousel__slide2"
-					 class="carousel__prev">Go to previous slide</a>
-				  <a href="#carousel__slide1"
-					 class="carousel__next">Go to next slide</a>
-				</li>
-			  </ol>
-			  <aside class="carousel__navigation">
-				<ol class="carousel__navigation-list">
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide1"
-					   class="carousel__navigation-button">Go to slide 1</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide2"
-					   class="carousel__navigation-button">Go to slide 2</a>
-				  </li>
-				  <li class="carousel__navigation-item">
-					<a href="#carousel__slide3"
-					   class="carousel__navigation-button">Go to slide 3</a>
-				  </li>
-				</ol>
-			  </aside>
-			</section>
-			
-			<div class="itch">
-				<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+
+			<!-- Based on source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+			<div class="carousel-container">
+				<!-- Slides -->
+				<div class="carousel-slide">
+					<img src="/Images/PlatformerPlayer.png" alt="Platformer Player" class="carousel-img no-antialiasing">
+				</div>
 				
-				<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/platformer">Itch_Project_Page()</a>
+				<div class="carousel-slide">
+					<img src="/Images/Platformer.png" alt="Platformer Game" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/Options.png" alt="Options" class="carousel-img">
+				</div>
+				
+				<!-- Navigation Buttons -->
+				<a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Thumbnails -->
+				<div class="thumbnail-row">
+					<div class="thumbnail-centering">
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor no-antialiasing" src="/Images/PlatformerPlayer.png" style="width:100%" onclick="currentSlide(1)" alt="Platformer Player">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/Platformer.png" style="width:100%" onclick="currentSlide(2)" alt="Platformer Game">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/Options.png" style="width:100%" onclick="currentSlide(3)" alt="Options">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script src="/js/image-carousel.js"></script>
+			<!-- End of source -->
+			
+			<div class="itch-container">
+				<div class="itch">
+					<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+					
+					<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/platformer">Itch_Project_Page()</a>
+				</div>
 			</div>
 			
 			<div class="tools-section">

@@ -24,6 +24,11 @@ hr.rounded {
 
 /* Project Classes */
 
+.itch-container {
+	display: inline-block; 
+	width: 100%;
+}
+
 .itch {
 	display: flex;
 	
@@ -52,10 +57,7 @@ hr.rounded {
 	
 	display: block;
 	width: 60%;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 4vw;
 	
 	text-decoration: none;
 	text-align: center;
@@ -124,267 +126,104 @@ hr.rounded {
 
 
 
-/* Source: https://css-tricks.com/css-only-carousel/ */
+/* Source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 /* Some alterations made */
 
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
+.carousel-container {
+	position: relative;
 }
 
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
+.carousel-slide {
+	display: none;
+	text-align: center;
+	background: #000000;
 }
 
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
+.cursor {
+	cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
+.carousel-prev,
+.carousel-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
-*::-webkit-scrollbar {
-  width: 0;
+.carousel-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
 
-*::-webkit-scrollbar-track {
-  background: transparent;
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+	color: black;
 }
 
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
-
-ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.carousel {
-	margin: 4vw;
-	margin-left: auto;
-	margin-right: auto;
+.thumbnail-row:after {
+    content: "";
+    display: table;
+    clear: both;
 	
-	width: 75%;
-	height: auto;
+	float: left;
+    position: relative;
+    left: -23%;
+}
+
+.thumbnail-centering {
+	float: left;
+    position: relative;
+    left: 23%;
+}
+
+/*Note: the height here is set so that the height of the smallest image hides the overflow of the other thumbnail images*/
+.thumbnail-column {
+    float: left;
+    width: 16vw;
+	overflow: hidden;
+	height: 8vw;
+
+	justify-content: center;
+	display:flex;
 	
-  position: relative;
-  padding-top: 40%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
+	margin-bottom: 4vw;
 }
 
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+.thumbnail {
+    opacity: 0.6;
 }
 
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background-color: inherit;
-}
-
-.carousel__slide:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-40%,70px);
-  color: #fff;
-  font-size: 2em;
-}
-
-.carousel__snapper {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-}
-
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-  animation-name: none;
-}
-
-.carousel__navigation {
-  position: absolute;
-  right: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #222;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
-.carousel__navigation-button:hover {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #555;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
-.carousel::after,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 25%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%) translateX(-.5em);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
-}
-
-.carousel::before,
-.carousel__prev {
-  position: absolute;
-  top: 0;
-  margin-top: 25%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%) translateX(.5em);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
-}
-
-.carousel::before,
-.carousel__prev {
-  left: -1rem;
-}
-
-.carousel::after,
-.carousel__next {
-  right: -1rem;
-}
-
-.carousel::before,
-.carousel::after {
-  content: '';
-  z-index: 1;
-  background-color: #333;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none;
-}
-
-.carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
-}
-
-.carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+.active,
+.thumbnail:hover {
+  opacity: 1;
 }
 
 /* End of Source: https://css-tricks.com/css-only-carousel/ */
 
 .carousel-img {
-	position: absolute;
+	/*position: absolute;
     top: -9999px;
     bottom: -9999px;
     left: -9999px;
     right: -9999px;
     margin: auto;
 
-	overflow: hidden;
+	overflow: hidden;*/
 	
-	width: 100%;
-	
+	height: 40vw;
+}
+
+.no-antialiasing {
 	/*Source: https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
 	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
