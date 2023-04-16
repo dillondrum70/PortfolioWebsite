@@ -106,6 +106,22 @@
 				<a class="itch-link function-yellow-text" target="_blank" href="https://snidepiano9157.itch.io/pinball">Itch_Project_Page()</a>
 			</div>
 			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text">
+					&emsp; "Flip Against the Frontier is an action-packed arcade pinball game where you play as a character inside the infamously difficult pinball machine, The Frontier.  You must destroy enemies, build gizmos,
+					and survive as long as possible to reach the highest score you can!
+					<br>
+					<br>
+					&emsp; This project was part of the 2023 Ubisoft Game Lab Competition in Montreal.  We had a max of eight developers with ten weeks of production from the release of the theme, Arcade, and the mandate which required at least one gravity mechanic, 
+					one creation mechanic, and one destruction mechanic as well as a leaderboard.  Our team consisted of three programmers, two artists, two designers, and one producer."
+				</h2>
+			</div>
+			
 			<div class="tools-section">
 				<h2 class="section-title class-green-text"> Programming Responsibilities </h2>
 				
@@ -213,7 +229,13 @@
 						Animation + Inverse Kinematics
 					</h1>
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; "Animation + Inverse Kinematics"
+						&emsp; "Animations were at the forefront of our worries for a while.  Early on, we knew that we would need to incorporate inverse kinematics from the feedback our mentors gave us.  When there is a slanted surface that a character stands on, it is very obvious when their feet do not align with the surface they are on.  We also knew that we would have to nail the animations in order to get a good feeling on the character side of the 3 C's.  The issue was that animations, of course, would come much later in the project so that work had to be postponed.
+						<br>
+						<br>
+						&emsp; Once we had our model, we started with basic mixamo animations as placeholders so that the main portion of the programming side could be completed.  Our character artist, Justin, would take the mixamo animations and touch them up to match exactly what we needed.  This meant that I was free to complete all the logic for animation programming.  I used Unity's state machine system to link the animations together.  I used their IK system to make the character's shoes align with the surface they stood on.  Eventually, we realized a slight problem.  What happens to the character's legs and animations if they start walking while swinging the bat or charging the bat for a swing?  To answer this, I used Unity's avatar masks and crafted the logic between the lower and upper halves of the character's body.  Unfortunately, as new aniamtions came in and changes were applied to the original model, I realized just how complicated this system could get.  Still, the animations turned out *almost* perfect in the end.
+						<br>
+						<br>
+						&emsp; What was really exciting was the applications of what I had learned in the process of programming the character's animations.  With my newfound knowledge of inverse kinematics, I realized that animating the big brother, the person playing the pinball machine, would be much easier.  Originally, we planned to have a dark silhouette standing still in front of the machine since we had to explain that part somehow.  I managed to convince the team of my idea and our character artist gave me a model of a man he was working on for his character art class.  I used an idle animation and had the hands attach to the side of the machine.  During the animation, he would move side to side occassionally and it looked very organic.  I had the head look at the first unlocked ball and, if no unlocked balls were on the field, then he would look at the player.  Lastly, during the slam tilt, I had him rotate only about 75% of the amount that the room tilted around the machine.  This gave the illusion that he was moving the machine.  The blurring used around the machine also allowed Justin to do a rush job on the texture so that this cosmetic feature did not take too much development time.  In total, this feature took me less than an hour and a half.  It was another one of those smaller features we didn't originally plan, but once it was in the game, we couldn't imagine not having it."
 					</h3>
 				</div>
 				
@@ -234,22 +256,6 @@
 						&emsp; "VFX Creation + Implementation"
 					</h3>
 				</div>
-			</div>
-			
-			<div class="overview">
-			
-				<h2 class="section-title class-green-text"> Overview </h2>
-				
-				<hr class="rounded title-underline">
-			
-				<h2 class="string-orange-text">
-					&emsp; "Flip Against the Frontier is an action-packed arcade pinball game where you play as a character inside the infamously difficult pinball machine, The Frontier.  You must destroy enemies, build gizmos,
-					and survive as long as possible to reach the highest score you can!
-					<br>
-					<br>
-					&emsp; This project was part of the 2023 Ubisoft Game Lab Competition in Montreal.  We had a max of eight developers with ten weeks of production from the release of the theme, Arcade, and the mandate which required at least one gravity mechanic, 
-					one creation mechanic, and one destruction mechanic as well as a leaderboard.  Our team consisted of three programmers, two artists, two designers, and one producer."
-				</h2>
 			</div>
 			
 			<div class="tools-section">
@@ -291,6 +297,9 @@
 					<br>
 					<br>
 					&emsp; We contextualized the gameplay as Flip, who is part of a family of tech geniuses, shrinking herself into the pinball machine to help her big brother get the high score on the infamously difficult pinball game, The Frontier.  The enemies, known as drain dwellers, are the machine's anti-cheat system coming after Flip for cheating.  We also added a magnet-like ability where the player could draw in the ball by holding down right trigger to charge their swing.  Even the tilting of the machine received an overhaul halfway through the project.  Instead of simply tilting, it is now more like the machine is slammed to one side or the other and enemies are thrown into the wall and destroyed.  This allows it to be used as a board-clearing tool to help players in a pinch.
+					<br>
+					<br>
+					&emsp; Something that surprised me was all of the smaller features that brought the game together.  It is amazing how there are so many things we almost didn't add that completely changed the atmosphere of the pinball machine, the menus, or any of our many systems.  It was a combination of many features that often go unnoticed when they are there, like IK for the feet and a person playing the pinball machine, but you would notice very quickly if it was missing.  In the future, I will be sure to place more emphasis on the polish phase since it adds so much to the game.
 					<br>
 					<br>
 					&emsp; If I were to do anything differently, I would have increased my communication with designers earlier in the project.  While I struggled to do so early in the project to follow documentation, I quickly learned to closely follow it to see how a mechanic is supposed to work.  However, often I would create a mechanic to match those specifications and later be told that the documentation is out of date.  A lot of development time could have been saved if I had directly asked designers about the features I was working on.  By the end of the project, our communication was much stronger and we worked as a cohesive unit.  Something I think we could have improved on as a team was our concepting speed.  In a ten-week project, it is important to iron out the concept early, but we had a disorganized process and lost the first week of concepting.  In the second week, we brainstormed and allowed the designers to create concepts from our ideas.  Unfortunately, these too were unpolished and we spent a lot of devleopment time finding the fun in our game.  Often it seems the concepting phase is discounted, but we have learned that it is one of the most critical junctures in a games development and will not underestimate it in the future.
