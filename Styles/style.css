@@ -292,15 +292,15 @@ ELEMENTS
 	display: inline;
 }
 
-.resume-section {
+/*.resume-section {
 	
 }
 
 .resume-section a{
 	display: block;
 	width: 40%;
-	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-top: 5vw;
+	margin-bottom: 10vw;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -362,7 +362,7 @@ ELEMENTS
 	border-width: 5px;
 	border-color: #3e648e;
 	border-style: solid;
-}
+}*/
 
 .same-line {
 	display: inline-block;
@@ -386,6 +386,10 @@ ELEMENTS
 	color: #ffffff;
 	padding: 10px;
 	margin: 20px;
+}
+
+.footer-text {
+	font-size: 1.5vmax;
 }
 
 .gif {

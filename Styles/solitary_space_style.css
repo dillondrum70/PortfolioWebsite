@@ -1,0 +1,18 @@
+.mechanic {
+	display: none;
+	width: 100%;
+	
+	padding: 1vw 0 2vw 0;
+	
+	background-color: #202020;
+}
+
+.mechanic-description {
+	text-align: left;
+	
+	padding: 0vw 3vw 0vw 3vw;
+}
+
+#Gameplay {
+	
+}
