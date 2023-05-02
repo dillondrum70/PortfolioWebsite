@@ -121,9 +121,12 @@ hr.rounded {
 }
 
 .overview {
-	padding: 100px;
+	padding: 7.5vw;
 }
 
+.overview-text {
+	font-size: 2vmax;
+}
 
 
 /* Source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
@@ -243,8 +246,8 @@ hr.rounded {
 .tools-text {
 	text-align: center;
 	display: inline-block;
-	padding: 0px 40px 0px 40px;
-	margin: 20px;
+	padding: 0px 4vw 0px 4vw;
+	margin: 2vw;
 	
 	width: auto;
     height: 100%;
@@ -252,19 +255,27 @@ hr.rounded {
     border-radius: 40px;
 }
 
+.tools-font {
+	font-size: 2vmax;
+}
+
 .responsibilities-text {
 	text-align: center;
 	display: inline-block;
-	padding: 0px 40px 0px 40px;
-	margin: 20px;
+	padding: 0px 3vw 0px 3vw;
+	margin: 1.5vw;
 	
 	width: auto;
     height: 100%;
     background-color: #090909;
-    border-radius: 40px;
+    border-radius: 3vw;
 	
 	transition: background-color .3s ease-in-out;
 	transition: transform .3s ease-in-out;
+}
+
+.responsibilities-font {
+	font-size: 2vmax;
 }
 
 .responsibilities-text:hover {
@@ -280,5 +291,9 @@ hr.rounded {
 }
 
 .reflection {
-	padding: 100px;
+	padding: 7.5vw;
+}
+
+.reflection-text {
+	font-size: 2vmax;
 }
