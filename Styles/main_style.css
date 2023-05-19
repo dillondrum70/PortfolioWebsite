@@ -98,7 +98,7 @@ The classes specific to the main page
 	background-color: #101010;
 	font-family: inherit;
 	
-	box-shadow: inset 50vw 0 0 0 #113d6f;
+	box-shadow: inset 62.5vw 0 0 0 #113d6f;
 	transition: border-width .4s ease-in-out, box-shadow .4s ease-in-out;
 	border-width: 5px;
 	border-color: #3e648e;
