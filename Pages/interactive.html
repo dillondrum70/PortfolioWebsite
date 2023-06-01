@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="base.css">
-	</head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/fact_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
 	<body>
 		<div data-include="../Modules/Header.html"></div>
+		
+		<div class="page-wrapper">
+		
+			<h1 class="banner-title class-green-text"> Interactive Portfolio </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<div style="text-align: center;">
+				<iframe frameborder="0" src="https://itch.io/embed-upload/8028334?color=0092f7" allowfullscreen="" width="80%" height="900vmin"><a href="https://dillondrum70.itch.io/pacific-portfolio">Play Pacific Portfolio on itch.io</a></iframe>
+			</div>
+		</div>
+		
+		
 	</body>
-	
+
 	<footer>
 		<div data-include="../Modules/Footer.html"></div>
 	</footer>
-
 </html>
+		
