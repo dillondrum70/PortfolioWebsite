@@ -113,6 +113,7 @@ hr.rounded {
 #project:hover {
 	transform: scale(1.1);
 	background-color: #303030;
+	z-index: 10;
 }
 
 #project #project-name-div {
@@ -128,6 +129,40 @@ hr.rounded {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 1.8vw;
+}
+
+#project #tools-section {
+	background-color: rgba(32, 32, 32, .2);
+	padding: .5vw 0px .5vw 0px;
+	width: 100%;
+	top: 25%;
+	position: absolute;
+	text-algin: inherit;
+	z-index: 4;
+	box-shadow: 0px 0vw 0vw #000000;
+
+	transition: top .3s ease-in-out, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#project:hover #tools-section {
+	top: 100%;
+	background-color: rgba(32, 32, 32, 1);
+	box-shadow: 0px 1vw 2vw #000000;
+}
+
+#project #tools-text {
+	text-align: center;
+	display: inline-block;
+	padding: 0px 5% 0px 5%;
+	margin: .5%;
+	
+	width: auto;
+    background: #090909;
+    border-radius: 40px;
+}
+
+#project #tools-font {
+	font-size: .6vw;
 }
 
 #project #project-img-section {
