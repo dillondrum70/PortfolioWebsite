@@ -86,42 +86,51 @@ ELEMENTS
 	font-size: 24px;
 	display: inline-block;
 	padding: 20px 0px 20px 0px;
+	position: relative;
 }
 
 .top-nav-elements a:link {
 	text-decoration: none;
-	padding: 20px 20px 20px 20px;
+	padding: 15px;
 	box-shadow: inset 0 0 0 0 #113d6f;
-	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
-	border-width: 0px;
-	border-color: #3e648e;
+	transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out, transform .3s ease-in-out;
+	border-width: 5px;
+	border-color: #101010;
 	border-style: solid;
+	transform: scale(1);
+	z-index: 1;
 }
 
 .top-nav-elements a:visited {
 	text-decoration: none;
-	padding: 20px 20px 20px 20px;
-	transition: border-width .3s ease-in-out, box-shadow .3s ease-in-out;
-	border-width: 0px;
-	border-color: #3e648e;
+	padding: 15px;
+	transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out, transform .3s ease-in-out;
+	border-width: 5px;
+	border-color: #101010;
 	border-style: solid;
+	transform: scale(1);
+	z-index: 1;
 }
 
 .top-nav-elements a:hover {
 	text-decoration: none;
-	padding: 20px 20px 20px 20px;
+	padding: 15px;
 	box-shadow: inset 255px 0 0 0 #113d6f;
 	border-width: 5px;
 	border-color: #3e648e;
 	border-style: solid;
+	transform: scale(1.1);
+	z-index: 1000;
 }
 
 .top-nav-elements a:active {
 	text-decoration: none;
-	padding: 20px 20px 20px 20px;
-	border-width: 0px;
+	padding: 15px;
+	border-width: 5px;
 	border-color: #3e648e;
 	border-style: solid;
+	transform: scale(1.1);
+	z-index: 1000;
 }
 
 .vert-nav {
