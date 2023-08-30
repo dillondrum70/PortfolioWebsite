@@ -28,7 +28,7 @@ hr.rounded {
 	display: inline-block;
 }
 
-#project-featured {
+.project-featured {
 	display: inline-grid;
 
 	text-decoration: none;
@@ -44,23 +44,23 @@ hr.rounded {
 	transition: transform .3s ease-in-out;
 }
 
-#project-featured:hover {
+.project-featured:hover {
 	
 	transform: scale(1.03);
 }
 
-#project-featured #project-banner {
+.project-featured .project-banner {
 	width: 100vw;
 	
 	filter: blur(.2vw);
 	transition: filter .3s ease-in-out;
 }
 
-#project-featured:hover #project-banner {
+.project-featured:hover .project-banner {
 	filter: blur(.8vw);
 }
 
-#project-featured #project-banner-title {
+.project-featured .project-banner-title {
 	height: inherit;
 	
 	position: relative;
@@ -70,7 +70,7 @@ hr.rounded {
 	z-index: 2;
 }
 
-#project-featured #project-banner-text {
+.project-featured .project-banner-text {
 	text-align:center;
 	font-size: 2vw;
 	color: white;
@@ -92,13 +92,13 @@ hr.rounded {
 	padding-right: 20vw;
 }
 
-#project {
+.project {
 	display: inline-grid;
 	
 	position: relative;
 	
-	width: 20vw;
-	height: 20vw;
+	width: 30vw;
+	height: 30vw;
 	margin: 2vw;
 	background-color: #1e1e1e;
 	text-align: inherit;
@@ -110,32 +110,38 @@ hr.rounded {
 	transition: all .3s ease-in-out;
 }
 
-#project:hover {
+.project:hover {
 	transform: scale(1.1);
 	background-color: #303030;
 	z-index: 10;
 }
 
-#project #project-name-div {
-	width: 20vw;
-	height: 5vw;
+.project .project-name-div {
+	width: 100%;
+	height: 80%;
 	background-color: #101010;
 	z-index: 3;
 	
 	text-algin: inherit;
 }
 
-#project #project-name-div #project-name{
+.project .project-name-div .project-name{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.8vw;
+	font-size: 3vw;
 }
 
-#project #tools-section {
+.project .project-name-div .long-project-name{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2.6vw;
+}
+
+.project .tools-section {
 	background-color: rgba(32, 32, 32, .2);
 	padding: .5vw 0px .5vw 0px;
 	width: 100%;
-	top: 25%;
+	top: 24%;
 	position: absolute;
 	text-algin: inherit;
 	z-index: 4;
@@ -144,13 +150,13 @@ hr.rounded {
 	transition: top .3s ease-in-out, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-#project:hover #tools-section {
+.project:hover .tools-section {
 	top: 100%;
 	background-color: rgba(32, 32, 32, 1);
 	box-shadow: 0px 1vw 2vw #000000;
 }
 
-#project #tools-text {
+.project .tools-text {
 	text-align: center;
 	display: inline-block;
 	padding: 0px 5% 0px 5%;
@@ -161,11 +167,11 @@ hr.rounded {
     border-radius: 40px;
 }
 
-#project #tools-font {
-	font-size: .6vw;
+.project .tools-font {
+	font-size: 1vw;
 }
 
-#project #project-img-section {
+.project .project-img-section {
 	overflow: hidden;
 	z-index: 2;
 	
@@ -187,19 +193,19 @@ hr.rounded {
 	transition: opacity .5s linear;
 }
 
-#project:hover #project-img-section {
+.project:hover .project-img-section {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s .5s, opacity .5s linear;
 }
 
-#project #project-img {
+.project .project-img {
 	/*max-width: 100%;
 	height: auto;
 	transform: scale(1.75);*/
 	
 	margin: 5vw 0px 0px 0px;
-	height: 75%;
+	height: 85%;
 	z-index: 2;
 
 	transition: transform .5s linear;
@@ -214,23 +220,23 @@ hr.rounded {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
-#project:hover #project-img {
+.project:hover .project-img {
 	transform: scale(2);
 
 	transition: transform .5s linear;
 }
 
-#project #project-description-section {
+.project .project-description-section {
 	margin: 0vw 2vw 10vw 2vw;
 	height: 10vw;
 	z-index: 1;
 }
 
-#project #project-description {
+.project .project-description {
 	top: 50%;
 	height: 10vw;
 	text-align: left;
-	font-size: 1.2vw;
+	font-size: 1.8vw;
 }
 
 .click-section-div {
@@ -247,4 +253,98 @@ hr.rounded {
 .click-to-see-more {
 	font-size: 1vw;
 }
+
+@media only screen and (max-width: 800px){
+	.project{
+		display: inline-grid;
+	
+		position: relative;
+		
+		width: 60vw;
+		height: 60vw;
+		margin: 4vw;
+		background-color: #1e1e1e;
+		text-align: inherit;
+		
+		text-decoration: none;
+		
+		box-shadow: 0px 1vw 2vw #000000;
+		
+		transition: all .3s ease-in-out;
+	}
+	
+	.project .project-name-div {
+		width: 100%;
+		height: 50%;
+		background-color: #101010;
+		z-index: 3;
+		
+		text-algin: inherit;
+	}
+
+	.project .project-name-div .project-name{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 6vw;
+	}
+	
+	.project .project-name-div .long-project-name{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 5.2vw;
+	}
+
+	
+	.project .tools-font {
+		font-size: 2vw;
+	}
+	
+	.project .project-img-section {
+		overflow: hidden;
+		z-index: 2;
+		
+		position: absolute;
+		
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+		
+		display: flex;
+		align-itmes: center;
+		justify-content: center;
+		
+		height: 110%;
+
+		visibility: visible;
+		opacity: 1;
+		transition: opacity .5s linear;
+	}
+	
+	.project .project-description-section {
+		margin: -10vw 4vw 10vw 4vw;
+		height: 20vw;
+		z-index: 1;
+	}
+
+	.project .project-description {
+		top: 50%;
+		height: 15vw;
+		text-align: left;
+		font-size: 3.6vw;
+	}
+	
+	.click-section-div {
+		position: relative; 
+		left: -5vw;
+		bottom: 9.5vw;
+		line-height: 2vw;
+	}
+
+	.click-to-see-more {
+		font-size: 2vw;
+	}
+}
+
+
 

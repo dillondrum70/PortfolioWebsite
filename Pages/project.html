@@ -11,13 +11,43 @@
 		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script>
-		$(function () {
+		
+		//Run whenever window is resized to make sure projects don't get too small to read
+		var resizeProjects = function() {
+			/*if(window.innerWidth < 800)
+			{
+				elementArray = document.getElementsByClassName("project");
+					
+				for(var i = 0; i < (elementArray.length); i++)
+				{
+					elementArray[i].style.width = "60vw";
+					elementArray[i].style.height = "60vw";
+				}
+			}
+			else
+			{
+				elementArray = document.getElementsByClassName("project");
+				
+				for(var i = 0; i < (elementArray.length); i++)
+				{
+					elementArray[i].style.width = "30vw";
+					elementArray[i].style.height = "30vw";
+				}
+			}*/
+		}
+		
+		$(function () {		
 		  var includes = $('[data-include]')
 		  $.each(includes, function () {
 			var file = $(this).data('include')
 			$(this).load(file)
 		  })
 		})
+		
+		$( document ).ready(function(){
+		   resizeProjects();   
+		   window.addEventListener('resize', resizeProjects);     
+		});
 		</script>
 
 	</head>
@@ -31,10 +61,10 @@
 			
 			<hr class="rounded divider-line">
 			
-			<a href="/Pages/Projects/FAtF.html" id="project-featured">
-				<img src="/Images/Pinball.png" alt="FlipAgainstTheFrontier" id="project-banner">
-				<img src="/Images/Flip_Against_The_Frontier_Logo.png" alt="FlipAgainstTheFrontier" id="project-banner-title">
-				<h2 id="project-banner-text">2023 Ubisoft Game Lab Competition</h2>
+			<a href="/Pages/Projects/FAtF.html" class="project-featured">
+				<img src="/Images/Pinball.png" alt="FlipAgainstTheFrontier" class="project-banner">
+				<img src="/Images/Flip_Against_The_Frontier_Logo.png" alt="FlipAgainstTheFrontier" class="project-banner-title">
+				<h2 class="project-banner-text">2023 Ubisoft Game Lab Competition</h2>
 			</a>
 			
 			
@@ -46,47 +76,47 @@
 			
 			<div class="project-carousel">
 			
-				<a href="/Pages/Projects/SolitarySpace.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/SolitarySpaceCockpit.png" alt="Solitary Space" id="project-img">
+				<a href="/Pages/Projects/SolitarySpace.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/SolitarySpaceCockpit.png" alt="Solitary Space" class="project-img">
 					</div>
 					
-					<!--<img src="/Images/DungeonPlayer.png" alt="First Person Dungeon" id="project-img">!-->
+					<!--<img src="/Images/DungeonPlayer.png" alt="First Person Dungeon" class="project-img">!-->
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Solitary Space </h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Solitary Space </h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Unity</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Unity</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C#</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C#</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Shadergraph</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Shadergraph</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Visual Effect Graph</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Visual Effect Graph</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Oculus Quest 2</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Oculus Quest 2</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line">HTC Vive</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line">HTC Vive</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class ="comment-green-text project-description">
 							/*
 							<br>
 							A VR spacecraft game focused on tangible interactive controls.
@@ -107,39 +137,39 @@
 
 				</a>
 			
-				<a href="/Pages/Projects/DungeonGenerator.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/DungeonPlayer.png" alt="First Person Dungeon" id="project-img">
+				<a href="/Pages/Projects/DungeonGenerator.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/DungeonPlayer.png" alt="First Person Dungeon" class="project-img">
 					</div>
 					
-					<!--<img src="/Images/DungeonPlayer.png" alt="First Person Dungeon" id="project-img">!-->
+					<!--<img src="/Images/DungeonPlayer.png" alt="First Person Dungeon" class="project-img">!-->
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> 3D Dungeon Generator</h2>
+					<div class="project-name-div">
+						<h2 class="long-project-name name-blue-text"> 3D Dungeon Generator</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Unity</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Unity</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C#</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C#</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">A* Pathfinding</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">A* Pathfinding</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Delaunay Tetrahedralization</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Delaunay Tetrahedralization</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							A 3D Dungeon Generator using Unity, a specialized A* algorithm, and Delaunay Tetrahedralization.
@@ -158,29 +188,29 @@
 
 				</a>
 				
-				<a href="/Pages/Projects/GBA.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/GBA_Game2.PNG" alt="GBA Game" id="project-img">
+				<a href="/Pages/Projects/GBA.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/GBA_Game2.PNG" alt="GBA Game" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Untitled GBA Game</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Untitled GBA Game</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">ARM Assembly</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">ARM Assembly</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">VASM Assembler</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">VASM Assembler</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							 Gameboy Advance game framework written in ARM assembly with animations, collisions, and movement.
@@ -198,41 +228,41 @@
 					</div>
 				</a>
 				
-				<a href="/Pages/Projects/MechAttack.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/Mech_Cinematic.png" alt="Mech Attack" id="project-img">
+				<a href="/Pages/Projects/MechAttack.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/Mech_Cinematic.png" alt="Mech Attack" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Mech Attack</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Mech Attack</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Unreal Engine 5</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Unreal Engine 5</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C++</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C++</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Blueprints</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Blueprints</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Niagra</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Niagra</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Blender</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Blender</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							A wave-based mech shooter using a C++ and Unreal Engine 5.
@@ -251,33 +281,33 @@
 					</div>
 				</a>
 				
-				<a href="/Pages/Projects/PatBurglar.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/Startscreen.png" alt="Pat Burglar" id="project-img">
+				<a href="/Pages/Projects/PatBurglar.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/Startscreen.png" alt="Pat Burglar" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Pat Burlgar</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Pat Burlgar</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Unity</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Unity</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C#</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C#</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">DK Bongos</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">DK Bongos</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							A reaction-based lockpicking game using Donkey Kong bongos with a focus on accessibility settings.
@@ -296,33 +326,33 @@
 					</div>
 				</a>
 				
-				<a href="/Pages/Projects/SWAT.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/SWAT.png" alt="SWAT" id="project-img">
+				<a href="/Pages/Projects/SWAT.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/SWAT.png" alt="SWAT" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> SWAT</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> SWAT</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Unity</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Unity</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C#</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C#</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Inkscape</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Inkscape</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							A 2D side-scrolling platforming shooter using Unity and C#.
@@ -341,37 +371,37 @@
 					</div>
 				</a>
 				
-				<a href="/Pages/Projects/Dilgine.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/DilPic.PNG" alt="Game Engine" id="project-img">
+				<a href="/Pages/Projects/Dilgine.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/DilPic.PNG" alt="Game Engine" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Dilgine</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Dilgine</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C++</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C++</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">WIN32</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">WIN32</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Vulkan</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Vulkan</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">SDL</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">SDL</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							Framework for a component-based game engine using Vulkan for 3D rendering.
@@ -390,29 +420,29 @@
 					</div>
 				</a>
 				
-				<a href="/Pages/Projects/Platformer.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/PlatformerPlayer.png" alt="Platformer" id="project-img">
+				<a href="/Pages/Projects/Platformer.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/PlatformerPlayer.png" alt="Platformer" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Platformer</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Platformer</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C++</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C++</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">SFML</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">SFML</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							A 2D platformer made from scratch using C++ and the SFML graphics library.
@@ -431,29 +461,29 @@
 					</div>
 				</a>
 				
-				<a href="/Pages/Projects/PhysicsEngine.html" id="project">
-					<div id="project-img-section">
-						<img src="/Images/Physics1.png" alt="Physics Engine" id="project-img">
+				<a href="/Pages/Projects/PhysicsEngine.html" class="project">
+					<div class="project-img-section">
+						<img src="/Images/Physics1.png" alt="Physics Engine" class="project-img">
 					</div>
 					
-					<div id="project-name-div">
-						<h2 id="project-name" class="name-blue-text"> Physics Engine</h2>
+					<div class="project-name-div">
+						<h2 class="project-name name-blue-text"> Physics Engine</h2>
 					</div>
 					
-					<div id="tools-section">
+					<div class="tools-section">
 					
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">Unity</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">Unity</h2>
 						</div>
 						
-						<div id="tools-text">
-							<h2 id="tools-font" class="name-blue-text same-line ">C#</h2>
+						<div class="tools-text">
+							<h2 class="tools-font name-blue-text same-line ">C#</h2>
 						</div>
 						
 					</div>
 					
-					<div id="project-description-section"> 
-						<h3 class="comment-green-text" id="project-description">
+					<div class="project-description-section"> 
+						<h3 class="comment-green-text project-description">
 							/*
 							<br>
 							A 3D particle based physics system with AABB box colliders and friction.
@@ -476,7 +506,6 @@
 			</div>
 		
 		</div>
-		
 		
 	</body>
 
