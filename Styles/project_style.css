@@ -92,6 +92,10 @@ hr.rounded {
 	padding-right: 20vw;
 }
 
+.project-has-long-name {
+	top: -1.5vw;
+}
+
 .project {
 	display: inline-grid;
 	
@@ -125,16 +129,25 @@ hr.rounded {
 	text-algin: inherit;
 }
 
+.project .long-project-name-div {
+	width: 100%;
+	height: 92%;
+	background-color: #101010;
+	z-index: 3;
+	
+	text-algin: inherit;
+}
+
 .project .project-name-div .project-name{
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 3vw;
 }
 
-.project .project-name-div .long-project-name{
+.project .long-project-name-div .long-project-name{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 2.6vw;
+	font-size: 2vw;
 }
 
 .project .tools-section {
@@ -281,6 +294,15 @@ hr.rounded {
 		
 		text-algin: inherit;
 	}
+	
+	.project .long-project-name-div {
+		width: 100%;
+		height: 57%;
+		background-color: #101010;
+		z-index: 3;
+		
+		text-algin: inherit;
+	}
 
 	.project .project-name-div .project-name{
 		display: inline-block;
@@ -288,10 +310,10 @@ hr.rounded {
 		font-size: 6vw;
 	}
 	
-	.project .project-name-div .long-project-name{
+	.project .long-project-name-div .long-project-name{
 		display: inline-block;
 		vertical-align: middle;
-		font-size: 5.2vw;
+		font-size: 4vw;
 	}
 
 	
