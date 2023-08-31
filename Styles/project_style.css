@@ -254,7 +254,7 @@ hr.rounded {
 	font-size: 1vw;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px), (max-aspect-ratio: 8/9){
 	.project{
 		display: inline-grid;
 	
