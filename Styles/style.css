@@ -257,12 +257,36 @@ ELEMENTS
 }
 
 .nameplate {
-	margin: 0px;
+	display: flex;
 	text-align: center;
 	align: center;
 	background-color: #1e1e1e;
-	padding: 10px;
+	padding: .5vw;
 	font-family: 'Cinzel', Handwriting;
+}
+
+.name-div {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+.name {
+	text-align: center;
+	align-items: center;
+	padding-top: 1vw;
+	font-size: 3vw;
+	
+}
+
+@media only screen and (max-width: 800px), (max-aspect-ratio: 8/9){
+	
+	.name {
+		text-align: center;
+		align-items: center;
+		padding-top: 2vw;
+		font-size: 6vw;
+	}
 }
 
 .page-wrapper {
@@ -393,4 +417,6 @@ ELEMENTS
 
 .gif {
 	width: 80%;
+	height: auto;
+	clip: hidden;
 }

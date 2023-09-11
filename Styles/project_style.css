@@ -219,6 +219,7 @@ hr.rounded {
 	
 	margin: 5vw 0px 0px 0px;
 	height: 85%;
+	width: auto;
 	z-index: 2;
 
 	transition: transform .5s linear;
@@ -336,7 +337,7 @@ hr.rounded {
 		align-itmes: center;
 		justify-content: center;
 		
-		height: 110%;
+		height: 100%;
 
 		visibility: visible;
 		opacity: 1;
