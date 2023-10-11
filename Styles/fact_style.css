@@ -24,11 +24,13 @@ hr.rounded {
 	position: relative;
 	margin: 50px 25px 50px 25px;
 	text-align: center;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #fact {
-	display: inline-grid;
+	dipslay: block;
 	
 	position: relative;
 	
@@ -78,14 +80,17 @@ hr.rounded {
 
 #fact #fact-description-section {
 	/*margin: 20px 40px 20px 40px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
+	height: 100%;
 	width: 50%
-	height: 16vw;
 	z-index: 1;
 }
 
 #fact #fact-description {
-	top: 50%;
+	
 	margin: 20px 40px 20px 40px;
 	text-align: left;
 	vertical-align: middle;
