@@ -4,6 +4,7 @@ The classes specific to the main page
 
 .about-section {
 	display: flex;
+	justify-content: center;
 }
 
 .header-profile-pic {
@@ -16,6 +17,12 @@ The classes specific to the main page
 }
 
 @media only screen and (max-width: 800px), (max-aspect-ratio: 8/9){
+	.about-section{
+		isplay: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
 	.header-profile-pic {
 		width: auto;
 		height: 16vw;
@@ -27,7 +34,7 @@ The classes specific to the main page
 }
 
 .profile-pic {
-	width: 40vw;
+	width: 30vw;
 	height: auto;
 	
 	object-fit: contain;
@@ -36,7 +43,7 @@ The classes specific to the main page
 }
 
 .about-me {
-	padding: 8vw 0px 8vw 0px;
+	padding: 2vw 0px 2vw 0px;
 }
 
 .about-header {
@@ -49,9 +56,9 @@ The classes specific to the main page
 
 .resume-section a{
 	display: block;
-	width: 60%;
+	width: 80%;
 	margin-top: 2.5vw;
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -59,7 +66,7 @@ The classes specific to the main page
 	text-align: center;
 	font-size: 4vw;
 	
-	padding: 4vw;
+	padding: 3vw;
 	background-color: #101010;
 	border-width: 0px;
 	
@@ -103,7 +110,7 @@ The classes specific to the main page
 	text-align: center;
 	font-size: 4vw;
 	
-	padding: 4vw;
+	padding: 3vw;
 	
 	background-color: #101010;
 	font-family: inherit;

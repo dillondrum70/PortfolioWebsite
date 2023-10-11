@@ -111,6 +111,7 @@ hr.rounded {
 
 .section-title {
 	text-align: center;
+	font-size: 2.5vmax
 }
 
 .title-underline {
@@ -121,11 +122,11 @@ hr.rounded {
 }
 
 .overview {
-	padding: 7.5vw;
+	padding: 3vw 4vw 3vw 4vw;
 }
 
 .overview-text {
-	font-size: 2vmax;
+	font-size: 1.5vmax;
 }
 
 
@@ -192,9 +193,9 @@ hr.rounded {
 /*Note: the height here is set so that the height of the smallest image hides the overflow of the other thumbnail images*/
 .thumbnail-column {
     float: left;
-    width: 16vw;
+    width: 12vw;
 	overflow: hidden;
-	height: 8vw;
+	height: 6vw;
 
 	justify-content: center;
 	display:flex;
@@ -247,7 +248,7 @@ hr.rounded {
 	text-align: center;
 	display: inline-block;
 	padding: 0px 4vw 0px 4vw;
-	margin: 2vw;
+	margin: .5vw;
 	
 	width: auto;
     height: 100%;
@@ -256,14 +257,14 @@ hr.rounded {
 }
 
 .tools-font {
-	font-size: 2vmax;
+	font-size: 1.5vmax;
 }
 
 .responsibilities-text {
 	text-align: center;
 	display: inline-block;
-	padding: 0px 3vw 0px 3vw;
-	margin: 1.5vw;
+	padding: 0px 2vw 0px 2vw;
+	margin: .75vw;
 	
 	width: auto;
     height: 100%;
@@ -275,7 +276,7 @@ hr.rounded {
 }
 
 .responsibilities-font {
-	font-size: 2vmax;
+	font-size: 1.5vmax;
 }
 
 .responsibilities-text:hover {
@@ -291,9 +292,9 @@ hr.rounded {
 }
 
 .reflection {
-	padding: 7.5vw;
+	padding: 3vw 4vw 3vw 4vw;
 }
 
 .reflection-text {
-	font-size: 2vmax;
+	font-size: 1.5vmax;
 }

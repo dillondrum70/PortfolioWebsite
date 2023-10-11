@@ -142,17 +142,17 @@
 							document.getElementById(sectionName).style.display = "block";
 						}
 					</script>
-								
-					<a onclick="ShowSection('Graphics')" class="responsibilities-text">
-						<h2 class="name-blue-text same-line responsibilities-font">Graphics</h2>
-					</a>
 					
 					<a onclick="ShowSection('Gameplay')" class="responsibilities-text">
 						<h2 class="name-blue-text same-line responsibilities-font">Gameplay</h2>
 					</a>
+
+					<a onclick="ShowSection('Graphics')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Graphics</h2>
+					</a>
 					
-					<a onclick="ShowSection('Interactable Controls')" class="responsibilities-text">
-						<h2 class="name-blue-text same-line responsibilities-font">Interactable Controls</h2>
+					<a onclick="ShowSection('Interactive Controls')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Interactive Controls</h2>
 					</a>
 					
 					<a onclick="ShowSection('Body Presence & Inverse Kinematics')" class="responsibilities-text">
@@ -161,10 +161,35 @@
 				
 				</div>
 				
-				<div id="Graphics" class="mechanic" style="display: block">
-					<h1 class="type-blue-text">
+				<div id="Gameplay" class="mechanic" style="display: block">
+					<h2 class="type-blue-text">
+						Gameplay
+					</h2>
+					
+					<img src="/GIFs/SolitarySpaceFlight.gif" alt="Flight" class="gif" style="margin-bottom: 2vw;">
+					
+					<img src="/GIFs/SolitarySpaceUpgrade.gif" alt="Upgrades" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; With as small as the team working on this project was, we all had a hand in the gameplay programming.  My responsibilites included (but were not limited to) the missile barrage, space stations, mission system, main menu, the jet-like HUD in the cockpit, and all of the asset implementation.  I also had a heavy hand in creating the movement system, but shared that burden with David.  A lot of my gameplay programming was focused on closing the game loop.  We had flight, turrets, and enemies fairly early on, but we were still just a spaceship floating around in an empty void for a while.  The upgrades and space stations were vital parts of the concept for the game to increase replayability.
+						<br>
+						<br>
+						&emsp; The name of the game with VR development is User Experience.  If the players are getting motion sick or if they're lost, they're going to stop playing.  We had a lot of design planning around motion sickness, one of the main ones being the inclusion of a settings menu that allows for snap turning.  The smooth turning of the ship was also a concern so we placed a frame around the cockpit in an attempt to ground rhe player to the ship.  Since the ship only turns while in the cockipt, we decided the turrets could be more open to allow for more visibility.  We also didn't want players getting lost so we implemented the 3D map to direct them to their destination and identify enemy locations (see the Graphics section!).
+						<br>
+						<br>
+						&emsp; We wanted players to immediately feel immersed.  The key aspect to this in a way was the main menu.  In the main menu, we knew that we wanted to have a hangar scene pretty early on.  We also implemented our tutorial as a deck officer talking to the player, but we used panels of text to relay the information.  If we had more time, we could have recorded those voice lines so the player wouldn't have to read too much text, but so much changed near the end of production that there just was not time as we kept tweaking the tutorial to cover new changes and other features that we hadn't originally put in the tutorial.
+						<br>
+						<br>
+						&emsp; I took on some other features like the missile rack and the crosshair HUD because they interested me.  I wanted to implement the missile barrage in a way that allowed missiles to cycle through the different tubes on the missile launcher model which I thought would be fun and satisfying to play with as it adds slightly to the realism of the system.  Additionally, I wanted to do the crosshair because it used stencil buffers to get the effect we wanted which required some custom render passes that I had more experience with.  It was very satisfying to see the HUD come together even though it is relatively simple.  It makes it easier to tell where the front guns on the cockpit are aiming and reminded me that sometimes its the little things that mean the most.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceMenu.gif" alt="Main Menu" class="gif">
+				</div>
+
+				<div id="Graphics" class="mechanic">
+					<h2 class="type-blue-text">
 						Graphics
-					</h1>
+					</h2>
 					
 					<img src="/GIFs/SolitarySpaceMap.gif" alt="Holographic Map" class="gif">
 					
@@ -189,32 +214,10 @@
 					</h3>
 				</div>
 				
-				<div id="Gameplay" class="mechanic">
-					<h1 class="type-blue-text">
-						Gameplay
-					</h1>
-					
-					<img src="/GIFs/SolitarySpaceFlight.gif" alt="Flight" class="gif" style="margin-bottom: 2vw;">
-					
-					<img src="/GIFs/SolitarySpaceUpgrade.gif" alt="Upgrades" class="gif">
-					
-					<h3 class="mechanic-description string-orange-text">
-						&emsp; With as small as the team working on this project was, we all had a hand in the gameplay programming.  My responsibilites included (but were not limited to) the missile barrage, space stations, mission system, main menu, the jet-like HUD in the cockpit, and all of the asset implementation.  I also had a heavy hand in creating the movement system, but shared that burden with David.  A lot of my gameplay programming was focused on closing the game loop.  We had flight, turrets, and enemies fairly early on, but we were still just a spaceship floating around in an empty void for a while.  The upgrades and space stations were vital parts of the concept for the game to increase replayability.
-						<br>
-						<br>
-						&emsp; The asset implementation was key to achieving the immersion we wanted from the game even though it was not technically taxing.  As enjoyable as it may be, flying a capsule around a default skybox is not exactly awe-inspiring.  There were some minor tweaks I had to make to the models we used, but for the most part they fit the art direction we were going for pretty well.  The main example of this is the menus.  In the main menu, we knew that we wanted to have a hangar scene pretty early on.  We also implemented our tutorial as a person talking to the player.  If we had more time, we could have recorded those voice lines so the player wouldn't have to read a wall of text, but so much changed near the end of production that there just was not time as we kept tweaking the tutorial to cover new changes and other features that we hadn't originally put in the tutorial.
-						<br>
-						<br>
-						&emsp; Additionally, I took on some other features like the missile rack and the crosshair HUD because they interested me.  I wanted to implement the missile barrage in a way that allowed missiles to cycle through the different tubes on the missile launcher model which I thought would be fun.  Additionally, I wanted to do the crosshair because it used stencil buffers to get the effect we wanted which required some custom render passes that I had more experience with.  It was very satisfying to see the HUD come together even though it is relatively simple.  It makes it easier to tell where the front guns on the cockpit are aiming and reminded me that sometimes its the little things that mean the most.
-					</h3>
-					
-					<img src="/GIFs/SolitarySpaceMenu.gif" alt="Main Menu" class="gif">
-				</div>
-				
-				<div id="Interactable Controls" class="mechanic">
-					<h1 class="type-blue-text">
+				<div id="Interactive Controls" class="mechanic">
+					<h2 class="type-blue-text">
 						Interactive Controls
-					</h1>
+					</h2>
 					
 					<img src="/GIFs/SolitarySpaceButton.gif" alt="Button" class="gif">
 					
@@ -239,14 +242,14 @@
 				</div>
 				
 				<div id="Body Presence & Inverse Kinematics" class="mechanic">
-					<h1 class="type-blue-text">
+					<h2 class="type-blue-text">
 						Body Presence & Inverse Kinematics
-					</h1>
+					</h2>
 					
 					<img src="/GIFs/SolitarySpaceBodyPresence.gif" alt="Body Presence" class="gif">
 					
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; Near the beginning of the project, I added the oculus hands to our project and made some hand animations that blended between each other based on which button was pressed.  Since then, I just added a health/shield dial, credits text box, and buttons to traverse the turret station (then turrets as we had a bottom turret that got cut) and the pilot seat.  I had left it that way for a long time because I and the team believed it was not important.  If anything, we planned to get some sort of wristwatch model to place the UI on later.  I realized just how wrong I was after I implemented this system.  I knew that I needed to replace the hand models so they would fit the art style, but I thought it might be fun to try and go for full body presence.  I did not expect it to add so much to the game.
+						&emsp; Near the beginning of the project, I added the default oculus hand models to our project and made some hand animations that blended between each other based on which button was pressed.  Since then, I just added a health/shield dial, credits text box, and buttons to traverse the turret station (then turrets as we had a bottom turret that got cut) and the pilot seat.  I had left it that way for a long time because I and the team believed it was not important.  If anything, we planned to get some sort of wristwatch model to place the UI on later.  However, we found the UI and hands to be rather clunky in the context of the surrounding world after we implemented assets so we decided to add in hands and arms that the UI could be placed onto.  I realized just how valuable that system was after I implemented it.  I knew that I needed to replace the hand models so they would fit the art style, but I thought it might be fun to try and go for full body presence.  I did not expect it to add so much to the game.
 						<br>
 						<br>
 						&emsp; This was another change that brought the game alive.  I used inverse kinematics on the arms and special placement of the elbows to create believable movement for the arms.  I also had a body below the camera so the player can look down and see themselves.  I took the popular strategy of removing the legs since the player doesn't move around and would theoretically never see their legs anyways.  Once I had the player moving around with a body, I realized how much better it looked to place the UI on the character's arms rather than in midair.  The body presence was a lot of fun to work on and it added so much to see your arm reach out and grab the controls and push the buttons so I am very proud of it.
