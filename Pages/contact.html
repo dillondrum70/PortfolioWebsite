@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/fact_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<div data-include="../Modules/Header.html"></div>
+		
+		<div id="page-wrapper" class="page-wrapper">
+		
+			<div class="resume-section">
+				<a href="mailto:dillondrum70@gmail.com" target="_blank" class="resume-button" style="font-size:2vw">
+					<span class="function-yellow-text">EmailMe</span>
+					<span class="operator-gray-text">(</span>
+					<span class="string-orange-text">"dillondrum70@gmail.com"</span>
+					<span class="operator-gray-text">)</span>
+				</a>
+			</div>
+			
+			<div class="resume-section">
+				<a  target="_blank" class="resume-button" style="font-size:2vw">
+					<span class="type-blue-text">Phone&nbsp;<span class="name-blue-text"> (336) 269-4073 <span class="operator-gray-text">;</span></span></span>
+				</a>
+			</div>
+			
+			<div class="resume-section">
+				<a href="https://www.linkedin.com/in/dillondrummond/" target="_blank" class="resume-button" style="font-size:2vw">
+					<span class="function-yellow-text">OpenLinkedIn</span>
+					<span class="operator-gray-text">(</span>
+					<span class="string-orange-text">"linkedin.com/in/dillondrummond/"</span>
+					<span class="operator-gray-text">)</span>
+				</a>
+			</div>
+			
+			<div class="resume-section">
+				<a href="https://github.com/dillondrum70" target="_blank" class="resume-button" style="font-size:2vw">
+					<span class="function-yellow-text">ShowGithub</span>
+					<span class="operator-gray-text">(</span>
+					<span class="string-orange-text">"github.com/dillondrum70"</span>
+					<span class="operator-gray-text">)</span>
+				</a>
+			</div>
+			
+			<div class="resume-section">
+				<a href="https://dillondrum70.itch.io/" target="_blank" class="resume-button" style="font-size:2vw">
+					<span class="function-yellow-text">OpenItchPage</span>
+					<span class="operator-gray-text">(</span>
+					<span class="string-orange-text">"dillondrum70.itch.io/"</span>
+					<span class="operator-gray-text">)</span>
+				</a>
+			</div>
+		
+		</div>
+		
+		
+	</body>
+
+	<footer>
+		<div data-include="../Modules/Footer.html"></div>
+	</footer>
+</html>
