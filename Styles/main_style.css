@@ -34,7 +34,7 @@ The classes specific to the main page
 }
 
 .profile-pic {
-	width: 30vw;
+	width: 20vw;
 	height: auto;
 	
 	object-fit: contain;
