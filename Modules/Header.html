@@ -10,7 +10,7 @@
 	</div>
 </div>
 		
-<div class="top-nav">
+<div id="navbar" class="top-nav">
 	<div class="top-nav-elements">
 		<a href="/index.html" class="function-yellow-text">MainPage()</a>
 		<a href="Files/DillonDrummondResume.pdf" target="_blank" class="function-yellow-text">Resume()</a>
@@ -18,6 +18,25 @@
 		<a href="/Pages/project.html" class="function-yellow-text">Projects()</a>
 		<a href="/Pages/funfact.html" class="function-yellow-text">AboutMe()</a>
 	</div>
+	
+	<!--Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp-->
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var wrapper = document.getElementById("page-wrapper");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+			wrapper.classList.add("offset")
+		  } else {
+			navbar.classList.remove("sticky");
+			wrapper.classList.remove("offset");
+		  }
+		}
+	</script>
 </div>
 
 <!--<div class="top-nav">
