@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/project_page_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="/Styles/solitary_space_style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+		<!--Background Image-->
+		<img id="page-background-image" src="../../Images/SolitarySpaceEnvironment.png" style="position: fixed; width: 100%; height: 100%; filter: blur(8px); z-index: -1; object-fit: cover;">
+
+		<div data-include="../../Modules/Header.html"></div>
+		
+		<div id="page-wrapper" class="page-wrapper page-background">
+		
+			<h1 class="banner-title class-green-text"> Western Shooter </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<!-- Based on source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+			<div class="carousel-container">
+				<!-- Slides -->
+				<div class="carousel-slide">
+					<img src="/GIFs/SolitarySpaceGameplay.gif" alt="Gameplay" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/SolitarySpaceCockpit.png" alt="Cockpit" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/SolitarySpaceEnemy.png" alt="Enemy" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/SolitarySpaceUpgrades.png" alt="Upgrades" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/Images/SolitarySpaceWave.png" alt="Wave" class="carousel-img">
+				</div>
+				
+				<!-- Navigation Buttons -->
+				<a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Thumbnails -->
+				<div class="thumbnail-row" style="left: -4.5vw;">
+					<div class="thumbnail-centering" style="left: 4.5vw;">
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/SolitarySpaceGIFThumbnail.png" style="width:100%" onclick="currentSlide(1)" alt="GIF Thumbnail">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/SolitarySpaceCockpit.png" style="width:100%" onclick="currentSlide(2)" alt="Cockpit">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/SolitarySpaceEnemy.png" style="width:100%" onclick="currentSlide(3)" alt="Enemy">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/SolitarySpaceUpgrades.png" style="width:100%" onclick="currentSlide(4)" alt="Upgrades">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/SolitarySpaceWave.png" style="width:100%" onclick="currentSlide(5)" alt="Wave">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script src="/js/image-carousel.js"></script>
+			<!-- End of source -->
+			
+			<div style="max-width: 1024px; margin: 10vw auto;">
+				<div style="position: relative; padding-bottom: 75%; height: 0px;">
+					<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/uTc_jrwKe4Y" title="Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="itch-container">
+				<div class="itch">
+					<img src="/Images/ItchIcon.png" alt="Itch" class="itch-img">
+					
+					<a class="itch-link function-yellow-text" target="_blank" href="https://dillondrum70.itch.io/solitaryspace">Itch_Project_Page()</a>
+				</div>
+			</div>
+			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text overview-text">
+					&emsp; Solitary Space is a VR spaceship simulator in which a courier travels between space stations for bonus credits which can be used to upgrade the ship and its defenses.  As the player travels, they will be attacked by different types of enemies.  Use in-game controls like a flight stick and throttle to control the ship and a turret station mounted at the top of the ship with machine guns and rocket launchers as well as a rechargeable missile barrage!
+					<br>
+					<br>
+					Solitary Space is a semester long project developed by myself, Joseph Lyons, and David Silverman using Unity and C#.  
+					<br>
+					<br>
+					The models, textures, and some of the effects (thrusters, missile firing, and missile explosions) are from the Sci-Fi pack by Synty Studios 
+					<a href="https://assetstore.unity.com/packages/3d/environments/sci-fi/polygon-sci-fi-space-low-poly-3d-art-by-synty-138857">here.</a>
+					<br>
+					<br>
+					All character animations except for those on the player's hands were done using mixamo.
+				</h2>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Programming Responsibilities </h2>
+				
+				<h3 style="color: #FFFFFF"> (Click to see more) </h3>
+				
+				<hr class="rounded title-underline">
+				
+				<div style="background: #151515">
+				
+					<script>
+						function ShowSection(sectionName) {
+							var i;
+							var sections = document.getElementsByClassName("mechanic");
+							for(i = 0; i < sections.length; i++) {
+								sections[i].style.display = "none";
+							}
+							
+							document.getElementById(sectionName).style.display = "block";
+						}
+					</script>
+					
+					<a onclick="ShowSection('Gameplay')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Gameplay</h2>
+					</a>
+
+					<a onclick="ShowSection('Graphics')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Graphics</h2>
+					</a>
+					
+					<a onclick="ShowSection('Interactive Controls')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Interactive Controls</h2>
+					</a>
+					
+					<a onclick="ShowSection('Body Presence & Inverse Kinematics')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Body Presence & Inverse Kinematics</h2>
+					</a>
+				
+				</div>
+				
+				<div id="Gameplay" class="mechanic" style="display: block">
+					<h2 class="type-blue-text">
+						Gameplay
+					</h2>
+					
+					<img src="/GIFs/SolitarySpaceFlight.gif" alt="Flight" class="gif" style="margin-bottom: 2vw;">
+					
+					<img src="/GIFs/SolitarySpaceUpgrade.gif" alt="Upgrades" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; With as small as the team working on this project was, we all had a hand in the gameplay programming.  My responsibilites included (but were not limited to) the missile barrage, space stations, mission system, main menu, the jet-like HUD in the cockpit, and all of the asset implementation.  I also had a heavy hand in creating the movement system, but shared that burden with David.  A lot of my gameplay programming was focused on closing the game loop.  We had flight, turrets, and enemies fairly early on, but we were still just a spaceship floating around in an empty void for a while.  The upgrades and space stations were vital parts of the concept for the game to increase replayability.
+						<br>
+						<br>
+						&emsp; The name of the game with VR development is User Experience.  If the players are getting motion sick or if they're lost, they're going to stop playing.  We had a lot of design planning around motion sickness, one of the main ones being the inclusion of a settings menu that allows for snap turning.  The smooth turning of the ship was also a concern so we placed a frame around the cockpit in an attempt to ground rhe player to the ship.  Since the ship only turns while in the cockipt, we decided the turrets could be more open to allow for more visibility.  We also didn't want players getting lost so we implemented the 3D map to direct them to their destination and identify enemy locations (see the Graphics section!).
+						<br>
+						<br>
+						&emsp; We wanted players to immediately feel immersed.  The key aspect to this in a way was the main menu.  In the main menu, we knew that we wanted to have a hangar scene pretty early on.  We also implemented our tutorial as a deck officer talking to the player, but we used panels of text to relay the information.  If we had more time, we could have recorded those voice lines so the player wouldn't have to read too much text, but so much changed near the end of production that there just was not time as we kept tweaking the tutorial to cover new changes and other features that we hadn't originally put in the tutorial.
+						<br>
+						<br>
+						&emsp; I took on some other features like the missile rack and the crosshair HUD because they interested me.  I wanted to implement the missile barrage in a way that allowed missiles to cycle through the different tubes on the missile launcher model which I thought would be fun and satisfying to play with as it adds slightly to the realism of the system.  Additionally, I wanted to do the crosshair because it used stencil buffers to get the effect we wanted which required some custom render passes that I had more experience with.  It was very satisfying to see the HUD come together even though it is relatively simple.  It makes it easier to tell where the front guns on the cockpit are aiming and reminded me that sometimes its the little things that mean the most.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceMenu.gif" alt="Main Menu" class="gif">
+				</div>
+
+				<div id="Graphics" class="mechanic">
+					<h2 class="type-blue-text">
+						Graphics
+					</h2>
+					
+					<img src="/GIFs/SolitarySpaceMap.gif" alt="Holographic Map" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text" style="text-align: center;">
+						Please excuse the washed out colors.  Our game has too many colors for the GIF format to handle.
+					<h3>
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; Something we wanted to focus on was the immersion of Solitary Space.  This meant that, while we are programmers and graphical fidelity was not a priority, we still wanted the game to look good and have a cohesive style.  We also wanted our visual feedback for the player to make sense contextually.  I developed several effects for this purpose.  One such effect was the map.  I created a holographic map effect that used VFX graph in unity and a custom render pass to obtain the depth texture of a specific camera rendering the surroundings of the ship (Ramy Daghstani, our professor, helped me in this regard).  Particles are spawned in a randomized grid by vfx graph and sample a render texture from the specific camera in question to get their color.  The particles are placed on a 2D grid and given a depth offset based on the depth texture obtained from the camera.  Then the effect is oritented to face the player at all times.  This gives the illusion of a 3D projection.  An unfortunate drawback is that there is a high quantity of particles spawned by this effect.  This map was used to display enemies as red dots and the waypoint to the next station as a golden dot.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceShield.gif" alt="Shield" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; Another effect I created was the responsive shield.  Originally, the effect was just going to be a standard scrolling texture or something similar, but I decided to take it an extra step and have the shield react to enemy fire.  Typically the shield is blue, but whenever it is damaged, a circular orange flash centered around the point of impact appears and fades out to indicate that the shield was hit.  Originally, the shield was a squished icosphere with a sort of breathing effect that had the panels of the shield expand out along their normals.  While the original effect looked cool, it was horribly distracting and blocked visibility around the ship.  The new shield was developed to be a little more subtle.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceDitherFog.gif" alt="Dither Fog" class="gif">
+						
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; The last effect I'll cover is the dithering fog.  As we neared the end of the project, we realized a slight issue.  When you looked at other space stations then turned your head, they started to disappear!  This of course was because of the far plane of the camera, but it was an immersion-breaking phenomenon.  We went back and forth over ways to fix it before finally settling on the simple yet effective dithering fog.  As an object approaches the furthest section of the camera's near and far plane, it will start to fade out with dithering.  While it is a simple effect, it allowed us to keep the project more performance oriented so that we could have a closer far plane if we wanted without causing strange visuals.
+					</h3>
+				</div>
+				
+				<div id="Interactive Controls" class="mechanic">
+					<h2 class="type-blue-text">
+						Interactive Controls
+					</h2>
+					
+					<img src="/GIFs/SolitarySpaceButton.gif" alt="Button" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; I've been tossing around the idea that immersion was a huge goal for this project, but the concept of interactive controls was the root of this goal.  I took inspiration for the idea from Rumble because I love the idea of diegetic UI and just changing settings and hopping into matches was fun with interactive buttons and levers.  I wanted to try that out in a different context.  The first interactive object I made was the button.  This one went through the most iteration.  Originally, it was highly interactive, able to be pushed down little by little until it reached a threshold, but using rigidbodies caused all sorts of problems with resolving collisions with the hand and fingers as well as having the button rigidbodies as a child underneath the ship's rigidbody.  Childing rigidbodies is very unstable in Unity.  I tried calculating the position of the pressed part of the button based on collisions with fingers, but this again had issues with incorrect collisions and other unforeseen issues.  Ultimately, I settled for a simple trigger that would 'press' the button when a finger came into contact with it.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceLever.gif" alt="Lever" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; We originally had plans for an engine room that would allow the player to boost their engines and repair the ship.  We were hoping to highlight fun, interactive elements with levers, switches, buttons, and a wiring mini-game, but it was out of scope and did not fit the play-style of the game.  In fact, I even developed a switch interactive object, but we could not find a reasonable use for it in our control scheme.  The lever became the base for the throttle and flight stick as was the original plan.  It is also used in the main menu as play and quit options.  This did not have nearly as much iteration as the button because the first implementation I had worked for the rest of the production.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceThrottle+FlightStick.gif" alt="Flight Stick and Throttle" class="gif">
+						
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; The throttle and flight stick were highlights because of the importance they held to the gameplay.  Solitary Space would not be the same game without the interactive flight controls.  The implementation was fairly simple once I finished the lever.  I later had to go back and modify them to fire the guns that we mounted to the front of the ship.  We wanted all the controls to feel responsive so each control uses haptics in some regard.  The throttle was key though because many players were confused.  We added a graphic to show that pushing forward and pulling back the throttle move the ship in those directions.  Additionally, since players were losing track of where their throttle was when looking around, we added a variable strength rumble as the throttle approaches max forward or reverse thrust.  There is also a strong buzz as the throttle passes 0 to give feedback for stopping the ship.  Lastly, we implemented deadzones on the flight stick and throttle so they are easier to use.
+						<br>
+						<br>
+						&emsp; This may not be interactive input, but I am still proud of my work on the input system as well.  While unity supplies many tools for VR development, their input systems for XR are relatively low level.  To make them easier to work with, I created an event-based system that allowed us to keep track of and access the controllers and hands throughout the code.  We could subscribe and unsubscribe different functions to and from the buttons on the controllers.  Given more time, I would have made it more flexible, but since we knew we would not need the majority of buttons on the controllers aside from grip and trigger (later adding thumbstick presses), that flexibility was not necessary and would have taken development time away from the actual game.
+					</h3>
+				</div>
+				
+				<div id="Body Presence & Inverse Kinematics" class="mechanic">
+					<h2 class="type-blue-text">
+						Body Presence & Inverse Kinematics
+					</h2>
+					
+					<img src="/GIFs/SolitarySpaceBodyPresence.gif" alt="Body Presence" class="gif">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; Near the beginning of the project, I added the default oculus hand models to our project and made some hand animations that blended between each other based on which button was pressed.  Since then, I just added a health/shield dial, credits text box, and buttons to traverse the turret station (then turrets as we had a bottom turret that got cut) and the pilot seat.  I had left it that way for a long time because I and the team believed it was not important.  If anything, we planned to get some sort of wristwatch model to place the UI on later.  However, we found the UI and hands to be rather clunky in the context of the surrounding world after we implemented assets so we decided to add in hands and arms that the UI could be placed onto.  I realized just how valuable that system was after I implemented it.  I knew that I needed to replace the hand models so they would fit the art style, but I thought it might be fun to try and go for full body presence.  I did not expect it to add so much to the game.
+						<br>
+						<br>
+						&emsp; This was another change that brought the game alive.  I used inverse kinematics on the arms and special placement of the elbows to create believable movement for the arms.  I also had a body below the camera so the player can look down and see themselves.  I took the popular strategy of removing the legs since the player doesn't move around and would theoretically never see their legs anyways.  Once I had the player moving around with a body, I realized how much better it looked to place the UI on the character's arms rather than in midair.  The body presence was a lot of fun to work on and it added so much to see your arm reach out and grab the controls and push the buttons so I am very proud of it.
+					</h3>
+					
+					<img src="/GIFs/SolitarySpaceUI.gif" alt="Suit UI" class="gif">
+				</div>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Tools </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Unity</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">C#</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Shadergraph</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Visual Effect Graph</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Oculus Quest 2</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">HTC Vive</h2>
+				</div>
+			</div>
+			
+			<div class="reflection">
+			
+				<h2 class="section-title class-green-text"> Reflection </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text reflection-text">
+					&emsp; Solitary Space posed many challenges we weren't originally prepared for.  While I didn't suffer nearly as much, my teammates struggled with motion sickness during the entire project.  This was something we tried to be as thorough as possible to avoid.  We added a setting for snap turning and tried to keep the player grounded in a sort of "cage" inside the cockpit so there was a point of reference to ground them.  While this met some success, the ship is still hurtling through space and VR comes with inherent motion sickness that we weren't able to avoid.  A difficuWlty I dealt with personally was that, since I have a much higher tolerance for motion sickness, my testing feedback was not as helpful since I could not tell what features were problematic.
+					<br>
+					<br>
+					&emsp; This project gave me a new appreciation for the Agile process and having an appointed project lead.  Joey and I were kept busy working on the Ubisoft Game Lab Competition (see <a href="FAtF.html" class="name-blue-text">Flip Against the Frontier</a>!) during the development of this project so were not able to devote as much time to the project as we would have liked.  This already put a hefty weight on our ability to function as a team.  We noticed the affects of this problem in earlier sprints and were able to improve our communication which allowed us to quickly produce more and more quality of life features.  Additionally, we had issues with certain team members not devoting enough time and effort to the project as well as producing sub-par features.  We were able to mitagete this issue by adopting a strategy of doing work in the first half of the sprint to compensate for any issues that may arise later and to leave room for testing and by assigning less tasks to team members who could not handle larger workflows.  If we were to do this project again, I would have stepped up to organize the project more, enforce good version control practices, and review features before they were pushed to the main branch.
+					<br>
+					<br>
+					&emsp; This project very much was my passion project throughout the spring 2023 semester.  I had wanted to make a spaceship simulator game for a while and, having recently gotten a new VR headset and had an interest in the field for a while, I thought I would propose to my team that we try developing in VR.  I made sure to take everyone's opinions into consideration on the projects.  A lot of creative decisions ended up going through me since I originally came up with the idea and we had no designers so I wanted to make sure that the rest of the team had a voice.  Whenever I had ideas, I made sure to run them past Joey and David so that I was not making sudden changes that the two of them were not prepared for.  Communication is a key aspect to working on a team of developers.
+				</h2>
+			</div>
+		</div>
+	</body>
+
+	<footer>
+		<div data-include="../../Modules/Footer.html"></div>
+	</footer>
+</html>
