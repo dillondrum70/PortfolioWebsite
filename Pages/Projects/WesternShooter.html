@@ -39,23 +39,23 @@
 			<div class="carousel-container">
 				<!-- Slides -->
 				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_RevolverGameplay.gif" alt="Revolver Gameplay 1" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_RifleGameplay.gif" alt="Rifle" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_ShotgunGameplay.gif" alt="Shotgun" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_RevolverGameplay2.gif" alt="Revolver Gameplay 2" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
 					<img src="/GIFs/WesternShooter_Revolver.gif" alt="Revolver" class="carousel-img">
-				</div>
-				
-				<div class="carousel-slide">
-					<img src="/GIFs/WesternShooter_Rifle.gif" alt="Rifle" class="carousel-img">
-				</div>
-				
-				<div class="carousel-slide">
-					<img src="/GIFs/WesternShooter_Shotgun.gif" alt="Shotgun" class="carousel-img">
-				</div>
-				
-				<div class="carousel-slide">
-					<img src="/GIFs/WesternShooter_Bottles.gif" alt="Bottles" class="carousel-img">
-				</div>
-				
-				<div class="carousel-slide">
-					<img src="/GIFs/WesternShooter_Settings.gif" alt="Settings" class="carousel-img">
 				</div>
 				
 				<!-- Navigation Buttons -->
@@ -66,19 +66,19 @@
 				<div class="thumbnail-row" style="left: -4.5vw;">
 					<div class="thumbnail-centering" style="left: 4.5vw;">
 						<div class="thumbnail-column">
-							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverThumbnail.png" style="width:100%" onclick="currentSlide(1)" alt="Revolver">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverGameplayThumbnail.png" style="width:100%" onclick="currentSlide(1)" alt="Revolver Gameplay">
 						</div>
 						<div class="thumbnail-column">
-							<img class="thumbnail cursor" src="/Images/WesternShooter_RifleThumbnail.png" style="width:100%" onclick="currentSlide(2)" alt="Rifle">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RifleGameplayThumbnail.png" style="width:100%" onclick="currentSlide(2)" alt="Rifle">
 						</div>
 						<div class="thumbnail-column">
-							<img class="thumbnail cursor" src="/Images/WesternShooter_ShotgunThumbnail.png" style="width:100%" onclick="currentSlide(3)" alt="Shotgun">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_ShotgunGameplayThumbnail.png" style="width:100%" onclick="currentSlide(3)" alt="Shotgun">
 						</div> 
 						<div class="thumbnail-column">
-							<img class="thumbnail cursor" src="/Images/WesternShooter_BottleThumbnail.png" style="width:100%" onclick="currentSlide(4)" alt="Bottles">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverGameplay2Thumbnail.png" style="width:100%" onclick="currentSlide(4)" alt="Revolver Gameplay 2">
 						</div>
 						<div class="thumbnail-column">
-							<img class="thumbnail cursor" src="/Images/WesternShooter_SettingsThumbnail.PNG" style="width:100%" onclick="currentSlide(5)" alt="Settings">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverThumbnail.PNG" style="width:100%" onclick="currentSlide(5)" alt="Revolver">
 						</div>
 					</div>
 				</div>
@@ -129,7 +129,7 @@
 			</div>
 			
 			<div class="tools-section">
-				<h2 class="section-title class-green-text"> Programming Responsibilities </h2>
+				<h2 class="section-title class-green-text"> Features </h2>
 				
 				<h3 style="color: #FFFFFF"> (Click to see more) </h3>
 				
@@ -149,119 +149,93 @@
 						}
 					</script>
 					
-					<a onclick="ShowSection('Gameplay')" class="responsibilities-text">
-						<h2 class="name-blue-text same-line responsibilities-font">Gameplay</h2>
+					<a onclick="ShowSection('Revolver')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Revolver</h2>
 					</a>
 
-					<a onclick="ShowSection('Graphics')" class="responsibilities-text">
-						<h2 class="name-blue-text same-line responsibilities-font">Graphics</h2>
+					<a onclick="ShowSection('Lever Action Rifle')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Lever Action Rifle</h2>
 					</a>
 					
-					<a onclick="ShowSection('Interactive Controls')" class="responsibilities-text">
-						<h2 class="name-blue-text same-line responsibilities-font">Interactive Controls</h2>
+					<a onclick="ShowSection('Shotgun')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Shotgun</h2>
 					</a>
 					
-					<a onclick="ShowSection('Body Presence & Inverse Kinematics')" class="responsibilities-text">
-						<h2 class="name-blue-text same-line responsibilities-font">Body Presence & Inverse Kinematics</h2>
+					<a onclick="ShowSection('Settings')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Settings</h2>
+					</a>
+
+					<a onclick="ShowSection('Bottles & Liquid Shader')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Bottles & Liquid Shader</h2>
 					</a>
 				
 				</div>
 				
-				<div id="Gameplay" class="mechanic" style="display: block">
+				<div id="Revolver" class="mechanic" style="display: block">
 					<h2 class="type-blue-text">
-						Gameplay
+						Revolver
 					</h2>
 					
-					<img src="/GIFs/SolitarySpaceFlight.gif" alt="Flight" class="gif" style="margin-bottom: 2vw;">
-					
-					<img src="/GIFs/SolitarySpaceUpgrade.gif" alt="Upgrades" class="gif">
+					<img src="/GIFs/WesternShooter_Revolver.gif" alt="Revolver" class="gif-skinny">
 					
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; With as small as the team working on this project was, we all had a hand in the gameplay programming.  My responsibilites included (but were not limited to) the missile barrage, space stations, mission system, main menu, the jet-like HUD in the cockpit, and all of the asset implementation.  I also had a heavy hand in creating the movement system, but shared that burden with David.  A lot of my gameplay programming was focused on closing the game loop.  We had flight, turrets, and enemies fairly early on, but we were still just a spaceship floating around in an empty void for a while.  The upgrades and space stations were vital parts of the concept for the game to increase replayability.
-						<br>
-						<br>
-						&emsp; The name of the game with VR development is User Experience.  If the players are getting motion sick or if they're lost, they're going to stop playing.  We had a lot of design planning around motion sickness, one of the main ones being the inclusion of a settings menu that allows for snap turning.  The smooth turning of the ship was also a concern so we placed a frame around the cockpit in an attempt to ground rhe player to the ship.  Since the ship only turns while in the cockipt, we decided the turrets could be more open to allow for more visibility.  We also didn't want players getting lost so we implemented the 3D map to direct them to their destination and identify enemy locations (see the Graphics section!).
-						<br>
-						<br>
-						&emsp; We wanted players to immediately feel immersed.  The key aspect to this in a way was the main menu.  In the main menu, we knew that we wanted to have a hangar scene pretty early on.  We also implemented our tutorial as a deck officer talking to the player, but we used panels of text to relay the information.  If we had more time, we could have recorded those voice lines so the player wouldn't have to read too much text, but so much changed near the end of production that there just was not time as we kept tweaking the tutorial to cover new changes and other features that we hadn't originally put in the tutorial.
-						<br>
-						<br>
-						&emsp; I took on some other features like the missile rack and the crosshair HUD because they interested me.  I wanted to implement the missile barrage in a way that allowed missiles to cycle through the different tubes on the missile launcher model which I thought would be fun and satisfying to play with as it adds slightly to the realism of the system.  Additionally, I wanted to do the crosshair because it used stencil buffers to get the effect we wanted which required some custom render passes that I had more experience with.  It was very satisfying to see the HUD come together even though it is relatively simple.  It makes it easier to tell where the front guns on the cockpit are aiming and reminded me that sometimes its the little things that mean the most.
+						&emsp; I wanted to solve some of the problems with making fun interactions with revolvers in other VR shooters.  Often revolvers require single bullet loading which is slow and clunky in a firefight often making pistols with magazines and faster reloading the better option.  My solution was to use speed loaders to streamline the reloading process.  This makes them functionally more similar to a standard pistol, but it allows the player to still feel the power fantasy of holding a revolver and has the realistic animations to back of the interaction.
 					</h3>
-					
-					<img src="/GIFs/SolitarySpaceMenu.gif" alt="Main Menu" class="gif">
 				</div>
 
-				<div id="Graphics" class="mechanic">
+				<div id="Lever Action Rifle" class="mechanic">
 					<h2 class="type-blue-text">
-						Graphics
+						Lever Action Rifle
 					</h2>
 					
-					<img src="/GIFs/SolitarySpaceMap.gif" alt="Holographic Map" class="gif">
-					
-					<h3 class="mechanic-description string-orange-text" style="text-align: center;">
-						Please excuse the washed out colors.  Our game has too many colors for the GIF format to handle.
-					<h3>
+					<img src="/GIFs/WesternShooter_Rifle.gif" alt="Rifle" class="gif-skinny">
 					
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; Something we wanted to focus on was the immersion of Solitary Space.  This meant that, while we are programmers and graphical fidelity was not a priority, we still wanted the game to look good and have a cohesive style.  We also wanted our visual feedback for the player to make sense contextually.  I developed several effects for this purpose.  One such effect was the map.  I created a holographic map effect that used VFX graph in unity and a custom render pass to obtain the depth texture of a specific camera rendering the surroundings of the ship (Ramy Daghstani, our professor, helped me in this regard).  Particles are spawned in a randomized grid by vfx graph and sample a render texture from the specific camera in question to get their color.  The particles are placed on a 2D grid and given a depth offset based on the depth texture obtained from the camera.  Then the effect is oritented to face the player at all times.  This gives the illusion of a 3D projection.  An unfortunate drawback is that there is a high quantity of particles spawned by this effect.  This map was used to display enemies as red dots and the waypoint to the next station as a golden dot.
-					</h3>
-					
-					<img src="/GIFs/SolitarySpaceShield.gif" alt="Shield" class="gif">
-					
-					<h3 class="mechanic-description string-orange-text">
-						&emsp; Another effect I created was the responsive shield.  Originally, the effect was just going to be a standard scrolling texture or something similar, but I decided to take it an extra step and have the shield react to enemy fire.  Typically the shield is blue, but whenever it is damaged, a circular orange flash centered around the point of impact appears and fades out to indicate that the shield was hit.  Originally, the shield was a squished icosphere with a sort of breathing effect that had the panels of the shield expand out along their normals.  While the original effect looked cool, it was horribly distracting and blocked visibility around the ship.  The new shield was developed to be a little more subtle.
-					</h3>
-					
-					<img src="/GIFs/SolitarySpaceDitherFog.gif" alt="Dither Fog" class="gif">
-						
-					<h3 class="mechanic-description string-orange-text">
-						&emsp; The last effect I'll cover is the dithering fog.  As we neared the end of the project, we realized a slight issue.  When you looked at other space stations then turned your head, they started to disappear!  This of course was because of the far plane of the camera, but it was an immersion-breaking phenomenon.  We went back and forth over ways to fix it before finally settling on the simple yet effective dithering fog.  As an object approaches the furthest section of the camera's near and far plane, it will start to fade out with dithering.  While it is a simple effect, it allowed us to keep the project more performance oriented so that we could have a closer far plane if we wanted without causing strange visuals.
+						&emsp; Another problem I wanted to tackle was that of lever action rifles in VR shooters.  Other interactions like loading an M4 or a pump-action shotgun are fairly well tested at this point and few titles deviate from the norm but lever action rifles do not have that testing behind them.   I decided to allow the player to grab the lever with trigger on the controllers and grab the actual gun with grip.  This way the player can interact with the rifle's action whenever they want.  Overall, that system works very well and achieves what I was hoping to.  While the interaction can sometimes be slightly odd with having to swap between pressing trigger and pressing grip, I plan to revisit it in the future and make some quality of life improvements like making the lever more forgiving when you let go of it for example.
+						<br>
+						<br>
+						&emsp; This was also the stage where I created a two-handed grab interactable.  For simplicity (and time contraints) I broke it down into two grab points on each rifle with the trigger grip as the main grab point.  
 					</h3>
 				</div>
 				
-				<div id="Interactive Controls" class="mechanic">
+				<div id="Shotgun" class="mechanic">
 					<h2 class="type-blue-text">
-						Interactive Controls
+						Shotgun
 					</h2>
 					
-					<img src="/GIFs/SolitarySpaceButton.gif" alt="Button" class="gif">
+					<img src="/GIFs/WesternShooter_Shotgun.gif" alt="Shotgun" class="gif-skinny">
 					
 					<h3 class="mechanic-description string-orange-text">
 						&emsp; I've been tossing around the idea that immersion was a huge goal for this project, but the concept of interactive controls was the root of this goal.  I took inspiration for the idea from Rumble because I love the idea of diegetic UI and just changing settings and hopping into matches was fun with interactive buttons and levers.  I wanted to try that out in a different context.  The first interactive object I made was the button.  This one went through the most iteration.  Originally, it was highly interactive, able to be pushed down little by little until it reached a threshold, but using rigidbodies caused all sorts of problems with resolving collisions with the hand and fingers as well as having the button rigidbodies as a child underneath the ship's rigidbody.  Childing rigidbodies is very unstable in Unity.  I tried calculating the position of the pressed part of the button based on collisions with fingers, but this again had issues with incorrect collisions and other unforeseen issues.  Ultimately, I settled for a simple trigger that would 'press' the button when a finger came into contact with it.
 					</h3>
+				</div>
+				
+				<div id="Settings" class="mechanic">
+					<h2 class="type-blue-text">
+						Settings
+					</h2>
 					
-					<img src="/GIFs/SolitarySpaceLever.gif" alt="Lever" class="gif">
+					<img src="/GIFs/WesternShooter_Settings.gif" alt="Settings" class="gif-skinny">
 					
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; We originally had plans for an engine room that would allow the player to boost their engines and repair the ship.  We were hoping to highlight fun, interactive elements with levers, switches, buttons, and a wiring mini-game, but it was out of scope and did not fit the play-style of the game.  In fact, I even developed a switch interactive object, but we could not find a reasonable use for it in our control scheme.  The lever became the base for the throttle and flight stick as was the original plan.  It is also used in the main menu as play and quit options.  This did not have nearly as much iteration as the button because the first implementation I had worked for the rest of the production.
-					</h3>
-					
-					<img src="/GIFs/SolitarySpaceThrottle+FlightStick.gif" alt="Flight Stick and Throttle" class="gif">
-						
-					<h3 class="mechanic-description string-orange-text">
-						&emsp; The throttle and flight stick were highlights because of the importance they held to the gameplay.  Solitary Space would not be the same game without the interactive flight controls.  The implementation was fairly simple once I finished the lever.  I later had to go back and modify them to fire the guns that we mounted to the front of the ship.  We wanted all the controls to feel responsive so each control uses haptics in some regard.  The throttle was key though because many players were confused.  We added a graphic to show that pushing forward and pulling back the throttle move the ship in those directions.  Additionally, since players were losing track of where their throttle was when looking around, we added a variable strength rumble as the throttle approaches max forward or reverse thrust.  There is also a strong buzz as the throttle passes 0 to give feedback for stopping the ship.  Lastly, we implemented deadzones on the flight stick and throttle so they are easier to use.
+						&emsp; The enemies were a key part of gameplay, but not key to the actual demo.  The first thing to be done were the firearms since I wanted to focus on satisfying guns.  In the last week of development, I blocked out a simple character that follows the player but only starts chasing them if they move outside of  a certain range or if the player breaks line of sight.  This gives the enemies a more realistic response to players moving small amounts towards or away from the enemies.  
 						<br>
 						<br>
-						&emsp; This may not be interactive input, but I am still proud of my work on the input system as well.  While unity supplies many tools for VR development, their input systems for XR are relatively low level.  To make them easier to work with, I created an event-based system that allowed us to keep track of and access the controllers and hands throughout the code.  We could subscribe and unsubscribe different functions to and from the buttons on the controllers.  Given more time, I would have made it more flexible, but since we knew we would not need the majority of buttons on the controllers aside from grip and trigger (later adding thumbstick presses), that flexibility was not necessary and would have taken development time away from the actual game.
+						&emsp; Additionally, I decoupled the gun from the enemy object to make the aiming systems simpler.  Rather than dealing with calculations for placing the arms and hands in certain locations such that the gun aims in the correct direction, I opted to have the gun float in space in front of the enemy and use IK to place the enemy hands on the revolver.  This allowed me to use the same classes for enemies as I did players just with the grab interactable logic stripped out since players did not need to grab enemy weapons.  It also meant that implementing recoil used the exact same system that the players did.  As a finishing touch, I added a look-at IK for the enemy head and they really came alive.
 					</h3>
 				</div>
 				
-				<div id="Body Presence & Inverse Kinematics" class="mechanic">
+				<div id="Bottles & Liquid Shader" class="mechanic">
 					<h2 class="type-blue-text">
-						Body Presence & Inverse Kinematics
+						Bottles & Liquid Shader
 					</h2>
 					
-					<img src="/GIFs/SolitarySpaceBodyPresence.gif" alt="Body Presence" class="gif">
+					<img src="/GIFs/WesternShooter_Bottles.gif" alt="Bottles" class="gif-skinny">
 					
 					<h3 class="mechanic-description string-orange-text">
-						&emsp; Near the beginning of the project, I added the default oculus hand models to our project and made some hand animations that blended between each other based on which button was pressed.  Since then, I just added a health/shield dial, credits text box, and buttons to traverse the turret station (then turrets as we had a bottom turret that got cut) and the pilot seat.  I had left it that way for a long time because I and the team believed it was not important.  If anything, we planned to get some sort of wristwatch model to place the UI on later.  However, we found the UI and hands to be rather clunky in the context of the surrounding world after we implemented assets so we decided to add in hands and arms that the UI could be placed onto.  I realized just how valuable that system was after I implemented it.  I knew that I needed to replace the hand models so they would fit the art style, but I thought it might be fun to try and go for full body presence.  I did not expect it to add so much to the game.
-						<br>
-						<br>
-						&emsp; This was another change that brought the game alive.  I used inverse kinematics on the arms and special placement of the elbows to create believable movement for the arms.  I also had a body below the camera so the player can look down and see themselves.  I took the popular strategy of removing the legs since the player doesn't move around and would theoretically never see their legs anyways.  Once I had the player moving around with a body, I realized how much better it looked to place the UI on the character's arms rather than in midair.  The body presence was a lot of fun to work on and it added so much to see your arm reach out and grab the controls and push the buttons so I am very proud of it.
+						&emsp; Originally, it was unclear if there would be time for enemies.  If I didn't get to them, I still wanted there to be something for the player to shoot at.  As soon as I saw the bottles in the asset pack I used, I knew immediately that I wanted to make a liquid shader.  If I had more time, I would have made the effect more complex, probably with bubbles, translucent warping effects, and more but the flat colors I used both fit the art style and took up minimal time allowing me to focus on the more important parts of gameplay.  I often found myself testing a certain feature during development and shooting all of the bottles before I would move on.  That interaction alone was very fun which was how I knew I was going in the right direction with the gunplay.
+
 					</h3>
-					
-					<img src="/GIFs/SolitarySpaceUI.gif" alt="Suit UI" class="gif">
 				</div>
 			</div>
 			

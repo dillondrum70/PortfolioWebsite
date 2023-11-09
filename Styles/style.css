@@ -83,6 +83,10 @@ ELEMENTS
 }
 
 .top-nav-elements a {
+
+}
+
+.top-nav-elements a div{
 	text-align: center;
 	font-size: 24px;
 	display: inline-block;
@@ -90,7 +94,14 @@ ELEMENTS
 	position: relative;
 }
 
-.top-nav-elements a:link {
+.top-nav-elements a:not(:last-child)::after{
+	content:""; 
+	border:.1vw solid #404040;
+	border-width: .15vw .15vw 0 0;
+	padding: 5px 0 5px 0;	
+}
+
+.top-nav-elements a:link div{
 	text-decoration: none;
 	padding: 15px;
 	box-shadow: inset 0 0 0 0 #113d6f;
@@ -102,7 +113,7 @@ ELEMENTS
 	z-index: 1;
 }
 
-.top-nav-elements a:visited {
+.top-nav-elements a:visited div{
 	text-decoration: none;
 	padding: 15px;
 	transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out, transform .3s ease-in-out;
@@ -113,7 +124,7 @@ ELEMENTS
 	z-index: 1;
 }
 
-.top-nav-elements a:hover {
+.top-nav-elements a:hover div{
 	text-decoration: none;
 	padding: 15px;
 	box-shadow: inset 255px 0 0 0 #113d6f;
@@ -124,7 +135,7 @@ ELEMENTS
 	z-index: 1000;
 }
 
-.top-nav-elements a:active {
+.top-nav-elements a:active div{
 	text-decoration: none;
 	padding: 15px;
 	border-width: 5px;
@@ -418,6 +429,12 @@ ELEMENTS
 
 .gif {
 	width: 80%;
+	height: auto;
+	clip: hidden;
+}
+
+.gif-skinny {
+	width: 35%;
 	height: auto;
 	clip: hidden;
 }
