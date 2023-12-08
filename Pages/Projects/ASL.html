@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/Styles/style.css">
+		<link rel="stylesheet" href="/Styles/project_page_style.css">
+		<link rel="stylesheet" href="/Styles/base.css">
+		<link rel="stylesheet" href="/Styles/solitary_space_style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="icon" type="image/x-icon" href="/Images/DillonPic.png">
+
+		<!--Script Source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file?page=1&tab=scoredesc#tab-top-->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+		$(function () {
+		  var includes = $('[data-include]')
+		  $.each(includes, function () {
+			var file = $(this).data('include')
+			$(this).load(file)
+		  })
+		})
+		</script>
+
+	</head>
+	
+	<body>
+
+		<div data-include="../../Modules/Header.html"></div>
+		
+		<div id="page-wrapper" class="page-wrapper page-background">
+		
+			<h1 class="banner-title class-green-text"> ASL Hand Tracking </h1>
+			
+			<hr class="rounded divider-line">
+			
+			<!-- Based on source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+			<div class="carousel-container">
+				<!-- Slides -->
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_RevolverGameplay.gif" alt="Revolver Gameplay 1" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_RifleGameplay.gif" alt="Rifle" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_ShotgunGameplay.gif" alt="Shotgun" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_RevolverGameplay2.gif" alt="Revolver Gameplay 2" class="carousel-img">
+				</div>
+				
+				<div class="carousel-slide">
+					<img src="/GIFs/WesternShooter_Revolver.gif" alt="Revolver" class="carousel-img">
+				</div>
+				
+				<!-- Navigation Buttons -->
+				<a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Thumbnails -->
+				<div class="thumbnail-row" style="left: -4.5vw;">
+					<div class="thumbnail-centering" style="left: 4.5vw;">
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverGameplayThumbnail.png" style="width:100%" onclick="currentSlide(1)" alt="Revolver Gameplay">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RifleGameplayThumbnail.png" style="width:100%" onclick="currentSlide(2)" alt="Rifle">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_ShotgunGameplayThumbnail.png" style="width:100%" onclick="currentSlide(3)" alt="Shotgun">
+						</div> 
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverGameplay2Thumbnail.png" style="width:100%" onclick="currentSlide(4)" alt="Revolver Gameplay 2">
+						</div>
+						<div class="thumbnail-column">
+							<img class="thumbnail cursor" src="/Images/WesternShooter_RevolverThumbnail.PNG" style="width:100%" onclick="currentSlide(5)" alt="Revolver">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script src="/js/image-carousel.js"></script>
+			<!-- End of source -->
+			
+			<div style="max-width: 1024px; margin: 10vw auto;">
+				<div style="position: relative; padding-bottom: 75%; height: 0px;">
+					<iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" src="https://www.youtube.com/embed/uMuCsNue9Wc?si=1xFBqkk3hxnYqcV2" title="ASL Hand Tracking Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="itch-container">
+				<div class="itch">
+					<img src="/Images/GithubIcon.png" alt="Github" class="itch-img">
+					
+					<a class="itch-link function-yellow-text" target="_blank" href="https://github.com/dillondrum70/PortfolioWebsite">Github_Page()</a>
+				</div>
+			</div>
+			
+			<div class="overview">
+			
+				<h2 class="section-title class-green-text"> Overview </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text overview-text">
+					&emsp; This is a demo project showing off a custom hand pose and gesture tracking system for American Sign Language on the Quest 2.  This was developed in Unity over the course of a week and a half.  I created a short proof of concept for a gesture-based spellcasting system where players might spell the name of a spell, "Ice" in this case, and then cast the spell.
+					<br>
+					<br>
+					&emsp;  I wanted to explore the challenges and benefits of being able to translate sign language in VR.  This would give players who are hard of hearing or unable to speak the ability to communicate with other players who may not know sign language.  Additionally, this could be extended into a tool to help others learn sign language.  I hope to also use this tool in the future for other game projects.  The possibilities of tracking specific hand gestures are endless!
+					<br>
+					<br>
+					&emsp; This project uses the Oculus Integration package for unity for base hand tracking and passthrough.
+				</h2>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Features </h2>
+				
+				<h3 style="color: #FFFFFF"> (Click to see more) </h3>
+				
+				<hr class="rounded title-underline">
+				
+				<div style="background: #151515">
+				
+					<script>
+						function ShowSection(sectionName) {
+							var i;
+							var sections = document.getElementsByClassName("mechanic");
+							for(i = 0; i < sections.length; i++) {
+								sections[i].style.display = "none";
+							}
+							
+							document.getElementById(sectionName).style.display = "block";
+						}
+					</script>
+					
+					<a onclick="ShowSection('Pose Tool')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Pose Tool</h2>
+					</a>
+
+					<a onclick="ShowSection('Gestures')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Gestures</h2>
+					</a>
+					
+					<a onclick="ShowSection('Spells')" class="responsibilities-text">
+						<h2 class="name-blue-text same-line responsibilities-font">Spells</h2>
+					</a>
+					
+				</div>
+				
+				<div id="Pose Tool" class="mechanic" style="display: block">
+					<h2 class="type-blue-text">
+						Pose Tool
+					</h2>
+					
+					<img src="../../Images/ASL_PoseEditor.PNG" alt="Pose Tool" class="gif-skinny">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; A pose in this context is a static state of the hand at a point in time.  This could be anything from a fist to a vulcan salute (what can I say, I love Star Trek).  A huge hurdle would have been creating all of these poses manually so I knew I would need a tool to do so.  I created a system that can reference a Unity prefab and output the current pose of a hand to that prefab.  Then this can be referenced later at runtime to compare the position of the wrist (the green sphere) and the rotation of each joint (the orange frustums indicate their acceptance range).  Since the poses are stored in prefabs, we can make slight adjustments manually in the editor as well.
+					</h3>
+				</div>
+
+				<div id="Gestures" class="mechanic">
+					<h2 class="type-blue-text">
+						Gestures
+					</h2>
+					
+					<img src="../../Images/ASL_ZGesture.PNG" alt="Gestures" class="gif-skinny">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; A lot of signs in ASL require motion.  Among the letters alone, "J" and "Z" require multiple poses.  I accomplished this by creating a "Gesture" that stores a list of static poses.  If the most recent poses made by the players hand match any of the known gestures, then that gesture is accepted.  This creates a simulation of motion where the system only cares that the poses are reached in a specific order.  This is slightly less accurate but more performant.
+						<br>
+						<br>
+						&emsp; The system checks the final pose in a gesture against the current hand first because there is no need to check the first pose if the last pose won't match.  The last pose must be held for an adjustable amount of time for letters such as "I" which starts the same way as "J".  I had to make sure the system didn't accidentally sign "I J" everytime the player signs "J".
+					</h3>
+				</div>
+				
+				<div id="Spells" class="mechanic">
+					<h2 class="type-blue-text">
+						Spells
+					</h2>
+					
+					<img src="../../Images/ASL_Spell.PNG" alt="Spells" class="gif-skinny">
+					
+					<h3 class="mechanic-description string-orange-text">
+						&emsp; I wanted to have a proof of concept to show other ways this system can be applied.  Once the framework is in place, spells are to gestures as gestures are to poses.  We check to see if the order of the most recent gestures matches any of the known spells.  Then we have a spell class that initiates some effect using a "SpellCast" function.
+					</h3>
+				</div>
+			</div>
+			
+			<div class="tools-section">
+				<h2 class="section-title class-green-text"> Tools </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Unity</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">C#</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Quest 2</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Hand Tracking</h2>
+				</div>
+				
+				<div class="tools-text">
+					<h2 class="name-blue-text same-line tools-font">Passthrough</h2>
+				</div>
+			</div>
+			
+			<div class="reflection">
+			
+				<h2 class="section-title class-green-text"> Reflection </h2>
+				
+				<hr class="rounded title-underline">
+			
+				<h2 class="string-orange-text reflection-text">
+					&emsp;   I was really excited for this project at the outset and I can't wait to continue working on it.  Accessibility is vital to games because they are supposed to be a place where everyone can come together.  Most VR games use verbal voice chat to communicate so anyone unable to speak or hear has no way to quickly communicate.  This would have to be combined with a voice-to-text solution to be completely effective at allowing someone who knows ASL to communicate with someone who does not.  
+					<br>
+					<br>
+					&emsp;   It was a very fun puzzle to work with and can still use some improvements and optimizations.  I want to create a more effective GUI based tool for creating and modifying hand poses.  Additionally, I want to expand on my proof of concept and create a gesture-based magic game using hand-tracking.  We've seen this done using controllers, but learning specific hand movements would breath life into the game and reinforce the feeling that players are learning a skill.  If possible, I would like to continue with sign language as the base, potentially making the game educational at the same time.  The only issue with trying to track ASL signs is the current limitations of hand tracking.
+					<br>
+					<br>
+					&emsp;   Some of the difficulties I ran into during this project are simply unsolvable with only a Quest 2 and hand tracking.  Most signs are directed away from the user which means that the hand sometimes occludes the fingers.  This was mitigated using tolerance angles on the finger joints, but signs such as P and Q still struggle since the middle, ring, and pinky finger are completely hidden.  This could be solved theoretically with more cameras such as lighthouses, but not with a single Quest 2 headset.
+					<br>
+					<br>
+					&emsp;   Another issue is the limitation of the software tracking specific hand gestures.  Currently, hand tracking can not detect crossed fingers or if the thumb is under other fingers.  This means that letter such as M, N, and T look the same to the tracking system as S (similar to a fist) and the letter R (crossed fingers) looks like the letter U (index and middle finger side by side like holding up two fingers).  Meta is currently on the frontlines of hand tracking so there is no guarantee a system exists out there that can support these motions.
+				</h2>
+			</div>
+		</div>
+	</body>
+
+	<footer>
+		<div data-include="../../Modules/Footer.html"></div>
+	</footer>
+</html>
