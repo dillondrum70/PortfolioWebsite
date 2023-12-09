@@ -433,6 +433,13 @@ ELEMENTS
 	clip: hidden;
 }
 
+.gif-wide {
+	width: auto;
+	height: 90%;
+	transform: translate(-15%, 12%);
+	clip: hidden;
+}
+
 .gif-skinny {
 	width: 35%;
 	height: auto;
