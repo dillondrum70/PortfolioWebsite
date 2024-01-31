@@ -22,22 +22,22 @@ footer {
 }
 
 h1 {
-	font-size: 56px;
+	font-size: 48px;
 	color: #dadada;
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 2vw;
 	color: #dadada;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 1.25vw;
 	color: #dadada;
 }
 
 p {
-	font-size: 12px;
+	font-size: .75vw;
 	color: #dadada;
 }
 

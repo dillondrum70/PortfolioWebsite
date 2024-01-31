@@ -7,14 +7,14 @@ The classes specific to the project detail pages
 }
 
 .divider-line {
-	height: 5px;
+	height: .2vh;
 	background-color: #4ec9b0;
 	
 	width: 80%;
 }
 
 hr.rounded {
-	border-top: 5px solid #4ec9b0;
+	border-top: .2vh solid #4ec9b0;
 	border-radius: 5px;
 }
 
