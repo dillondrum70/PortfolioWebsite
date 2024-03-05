@@ -88,7 +88,7 @@ ELEMENTS
 
 .top-nav-elements a div{
 	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
 	display: inline-block;
 	padding: 20px 0px 20px 0px;
 	position: relative;
@@ -269,18 +269,19 @@ ELEMENTS
 }
 
 .nameplate {
-	display: flex;
+	display: block;
 	text-align: center;
 	align: center;
 	background-color: #1e1e1e;
 	padding: .5vw;
-	font-family: 'Cinzel', Handwriting;
+	font-family: 'Source Code Pro', monospace;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .name-div {
 	margin-left: auto;
 	margin-right: auto;
-	display: flex;
 }
 
 .name {
@@ -288,7 +289,13 @@ ELEMENTS
 	align-items: center;
 	padding-top: 1vw;
 	font-size: 2vw;
-	
+}
+
+.name-subtitle {
+	text-align: center;
+	align-items: center;
+	padding-top: 2vw;
+	font-size: 1.5vw;
 }
 
 @media only screen and (max-width: 800px), (max-aspect-ratio: 8/9){
@@ -299,6 +306,13 @@ ELEMENTS
 		padding-top: 2vw;
 		font-size: 6vw;
 	}
+	
+	.name-subtitle {
+	text-align: center;
+	align-items: center;
+	padding-top: 2vw;
+	font-size: 4vw;
+}
 }
 
 .page-wrapper {
